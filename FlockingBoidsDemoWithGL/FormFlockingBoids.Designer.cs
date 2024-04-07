@@ -36,9 +36,9 @@
             this.ResultField.BackColor = System.Drawing.Color.Black;
             this.ResultField.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ResultField.Location = new System.Drawing.Point(0, 0);
-            this.ResultField.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ResultField.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ResultField.Name = "ResultField";
-            this.ResultField.Size = new System.Drawing.Size(1359, 729);
+            this.ResultField.Size = new System.Drawing.Size(1801, 907);
             this.ResultField.TabIndex = 0;
             this.ResultField.VSync = false;
             this.ResultField.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintGLSurfaceEventArgs>(this.ResultField_PaintSurface);
@@ -46,11 +46,13 @@
             // 
             // FormFlockingBoids
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 729);
+            this.ClientSize = new System.Drawing.Size(1801, 907);
             this.Controls.Add(this.ResultField);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormFlockingBoids";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flocking Boids With GL";
             this.ResumeLayout(false);
 

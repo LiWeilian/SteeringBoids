@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\work_lab\\GitHub\\SteeringBoids\\",
+  "WorkspaceRootPath": "D:\\GitHub\\SteeringBoids\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|d:\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidenemiesbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidenemiesbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|d:\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidobstaclebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidobstaclebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|d:\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\flockingboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\flockingboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|d:\\github\\steeringboids\\steeringbehaviourscore\\renderer\\flockingboidrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\flockingboidrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA1E0B9-9B62-4A18-BB43-922F90129A87}|ArriveBoids\\ArriveBoids.csproj|d:\\github\\steeringboids\\arriveboids\\formarriveboids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA1E0B9-9B62-4A18-BB43-922F90129A87}|ArriveBoids\\ArriveBoids.csproj|solutionrelative:arriveboids\\formarriveboids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA1E0B9-9B62-4A18-BB43-922F90129A87}|ArriveBoids\\ArriveBoids.csproj|d:\\github\\steeringboids\\arriveboids\\formarriveboids.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA1E0B9-9B62-4A18-BB43-922F90129A87}|ArriveBoids\\ArriveBoids.csproj|solutionrelative:arriveboids\\formarriveboids.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +50,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -59,27 +75,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FlockBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Title": "AvoidEnemiesBehaviour.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T02:49:46.137Z",
+              "WhenOpened": "2024-04-07T13:38:48.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FlockingBoidsController.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
+              "Title": "AvoidObstacleBehaviour.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleBehaviour.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T02:49:33.481Z",
+              "WhenOpened": "2024-04-07T13:38:46.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlockBehaviour.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T13:38:34.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FlockingBoidRenderer.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA6wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T13:38:16.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormArriveBoids.Designer.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\ArriveBoids\\FormArriveBoids.Designer.cs",
+              "RelativeDocumentMoniker": "ArriveBoids\\FormArriveBoids.Designer.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\ArriveBoids\\FormArriveBoids.Designer.cs",
+              "RelativeToolTip": "ArriveBoids\\FormArriveBoids.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T13:28:50.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormArriveBoids.cs",
+              "DocumentMoniker": "D:\\GitHub\\SteeringBoids\\ArriveBoids\\FormArriveBoids.cs",
+              "RelativeDocumentMoniker": "ArriveBoids\\FormArriveBoids.cs",
+              "ToolTip": "D:\\GitHub\\SteeringBoids\\ArriveBoids\\FormArriveBoids.cs",
+              "RelativeToolTip": "ArriveBoids\\FormArriveBoids.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T13:24:32.773Z",
               "EditorCaption": ""
             }
           ]

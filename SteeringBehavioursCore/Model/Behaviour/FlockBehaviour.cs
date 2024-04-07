@@ -1,4 +1,4 @@
-﻿using SteeringBehavioursCore.Model.Field;
+﻿
 using SteeringBehavioursCore.Model.Field;
 using SteeringBehavioursCore.Model.Boid;
 
