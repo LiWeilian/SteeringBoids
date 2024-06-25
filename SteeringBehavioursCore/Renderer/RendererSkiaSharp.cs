@@ -100,6 +100,19 @@ namespace SteeringBehavioursCore.Renderer
             DrawLine(p2, p3, size, color);
         }
 
+        protected void DrawTShape(Point center, float direction, float speed, float size, Color color)
+        {
+            _paint.Color = ConvertColor(color);
+            Point p1 = new Point(center.X + size * Math.Cos(direction / 180 * Math.PI), center.Y + size * Math.Sin(direction / 180 * Math.PI));
+            Point p2 = new Point(center.X - size * Math.Cos(direction / 180 * Math.PI), center.Y - size * Math.Sin(direction / 180 * Math.PI));
+            //速率越大，头部越尖
+            Point p3 = new Point(center.X - size * Math.Sin(direction / 180 * Math.PI) * 2 * speed, center.Y + size * Math.Cos(direction / 180 * Math.PI) * 2 * speed);
+            DrawLine(p1, p2, size, color);
+            //DrawLine(p1, p3, size, color);
+            //DrawLine(p2, p3, size, color);
+            DrawLine(p3, center, size, color);
+        }
+
         protected void DrawTailBoid(IBoid boid, Color color, bool boidDispBySpeed = true)
         {
 
@@ -115,10 +128,10 @@ namespace SteeringBehavioursCore.Renderer
             //FillCircle(new Point(boid.Position.X, boid.Position.Y), BoidRadius, color);
             if (boidDispBySpeed)
             {
-                DrawTriangle(new Point(boid.Position.X, boid.Position.Y), boid.Velocity.GetAngle(), boid.Velocity.GetCurrentSpeed(), boid.Size, color);
+                DrawTShape(new Point(boid.Position.X, boid.Position.Y), boid.Velocity.GetAngle(), boid.Velocity.GetCurrentSpeed(), boid.Size, color);
             } else
             {
-                DrawTriangle(new Point(boid.Position.X, boid.Position.Y), boid.Velocity.GetAngle(), 1.5f, boid.Size, color);
+                DrawTShape(new Point(boid.Position.X, boid.Position.Y), boid.Velocity.GetAngle(), 1.5f, boid.Size, color);
             }
         }
 

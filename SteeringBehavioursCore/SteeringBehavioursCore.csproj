@@ -103,6 +103,7 @@
     <Compile Include="Model\Boid\IEnemy.cs" />
     <Compile Include="Model\Boid\IKeySteeringBoid.cs" />
     <Compile Include="Model\Boid\KeySteeringBoid.cs" />
+    <Compile Include="Model\Boid\TrainBoid.cs" />
     <Compile Include="Model\Field\ArriveField.cs" />
     <Compile Include="Model\Behaviour\AlignBehaviour.cs" />
     <Compile Include="Model\Behaviour\ArriveBehaviour.cs" />
