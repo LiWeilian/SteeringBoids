@@ -44,7 +44,7 @@
       <HintPath>..\packages\OpenTK.GLControl.3.1.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\SkiaSharp.2.88.6\lib\net462\SkiaSharp.dll</HintPath>
+      <HintPath>..\packages\SkiaSharp.2.88.7\lib\net462\SkiaSharp.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp.Extended, Version=1.60.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\SkiaSharp.Extended.1.60.0\lib\netstandard2.0\SkiaSharp.Extended.dll</HintPath>
@@ -144,19 +144,19 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
-    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.targets'))" />
     <Error Condition="!Exists('..\packages\SkiaSharp.Views.Forms.2.88.6\build\net462\SkiaSharp.Views.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.Views.Forms.2.88.6\build\net462\SkiaSharp.Views.Forms.targets'))" />
     <Error Condition="!Exists('..\packages\SkiaSharp.Views.Forms.WPF.2.88.6\build\SkiaSharp.Views.Forms.WPF.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.Views.Forms.WPF.2.88.6\build\SkiaSharp.Views.Forms.WPF.props'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.7\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.7\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.7\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.7\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
   </Target>
-  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
   <Import Project="..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.8.0.1821\build\Xamarin.Forms.targets')" />
   <Import Project="..\packages\SkiaSharp.Views.Forms.2.88.6\build\net462\SkiaSharp.Views.Forms.targets" Condition="Exists('..\packages\SkiaSharp.Views.Forms.2.88.6\build\net462\SkiaSharp.Views.Forms.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.7\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.7\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.7\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.7\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
 </Project>
