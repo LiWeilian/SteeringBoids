@@ -95,13 +95,17 @@
     <Compile Include="Controller\SteeringByKeysController.cs" />
     <Compile Include="Controller\WanderingController.cs" />
     <Compile Include="Model\Behaviour\AvoidObstacleBehaviour.cs" />
+    <Compile Include="Model\Behaviour\ChaseFoodBehaviour.cs" />
     <Compile Include="Model\Behaviour\FollowPathBehaviour.cs" />
     <Compile Include="Model\Behaviour\HiddenBehaviour.cs" />
     <Compile Include="Model\Behaviour\WanderBehaviour.cs" />
     <Compile Include="Model\Boid\EnemyBoid.cs" />
+    <Compile Include="Model\Boid\FoodBoid.cs" />
     <Compile Include="Model\Boid\IBoid.cs" />
     <Compile Include="Model\Boid\IEnemy.cs" />
+    <Compile Include="Model\Boid\IFood.cs" />
     <Compile Include="Model\Boid\IKeySteeringBoid.cs" />
+    <Compile Include="Model\Boid\ILife.cs" />
     <Compile Include="Model\Boid\KeySteeringBoid.cs" />
     <Compile Include="Model\Boid\TrainBoid.cs" />
     <Compile Include="Model\Field\ArriveField.cs" />

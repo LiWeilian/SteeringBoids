@@ -24,6 +24,10 @@ namespace SteeringBehavioursCore.Renderer
             this.DrawFieldOverview(field);
             foreach (var boid in field.Boids)
             {
+                if (boid is ILife && ((ILife)boid).Life <= 0)
+                {
+                    continue;
+                }
                 if (boid is IEnemy)
                     DrawTailBoid(boid, _enemyColor, field.BoidDisplayBySpeed);
                 else
@@ -37,6 +41,11 @@ namespace SteeringBehavioursCore.Renderer
             int enemies_count = 0;
             foreach (var boid in field.Boids)
             {
+                if (boid is ILife && ((ILife)boid).Life <= 0)
+                {
+                    continue;
+                }
+
                 if (boid is IEnemy)
                 {
                     enemies_count++;

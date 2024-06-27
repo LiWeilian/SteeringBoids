@@ -21,6 +21,10 @@ namespace SteeringBehavioursCore.Model.Field
 
         public virtual void Advance(float stepSize = 1)
         {
+            for (int i = Boids.Length - 1; i >= 0; i--)
+            {
+
+            }
             Parallel.ForEach(Boids, boid => boid.Move(stepSize));
         }
 
