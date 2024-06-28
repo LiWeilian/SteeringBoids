@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace SteeringBehavioursCore.Model.Boid
 {
-    public interface IFood
+    internal interface IPredator
     {
-        float Quantity { get; set; }
-        float Consume(float amount);
     }
 }

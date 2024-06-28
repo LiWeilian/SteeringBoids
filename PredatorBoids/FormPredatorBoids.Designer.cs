@@ -1,6 +1,6 @@
-﻿namespace FlockingBoidsDemoWithGL
+﻿namespace PredatorBoids
 {
-    partial class FormFlockingBoids
+    partial class FormPredatorBoids
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -38,21 +38,20 @@
             this.ResultField.Location = new System.Drawing.Point(0, 0);
             this.ResultField.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ResultField.Name = "ResultField";
-            this.ResultField.Size = new System.Drawing.Size(1601, 756);
-            this.ResultField.TabIndex = 0;
+            this.ResultField.Size = new System.Drawing.Size(1602, 747);
+            this.ResultField.TabIndex = 1;
             this.ResultField.VSync = false;
             this.ResultField.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintGLSurfaceEventArgs>(this.ResultField_PaintSurface);
-            this.ResultField.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ResultField_MouseDown);
             // 
-            // FormFlockingBoids
+            // FormPredatorBoids
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1601, 756);
+            this.ClientSize = new System.Drawing.Size(1602, 747);
             this.Controls.Add(this.ResultField);
-            this.Name = "FormFlockingBoids";
+            this.Name = "FormPredatorBoids";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Flocking Boids With GL";
+            this.Text = "Predator Boids, Chase, Eat, Survie";
             this.ResumeLayout(false);
 
         }

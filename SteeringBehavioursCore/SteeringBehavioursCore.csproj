@@ -92,21 +92,26 @@
     <Compile Include="Controller\FlockingBoidsController.cs" />
     <Compile Include="Controller\HiddenController.cs" />
     <Compile Include="Controller\PathFollowingController.cs" />
+    <Compile Include="Controller\PredatorBoidsController.cs" />
     <Compile Include="Controller\SteeringByKeysController.cs" />
     <Compile Include="Controller\WanderingController.cs" />
     <Compile Include="Model\Behaviour\AvoidObstacleBehaviour.cs" />
-    <Compile Include="Model\Behaviour\ChaseFoodBehaviour.cs" />
+    <Compile Include="Model\Behaviour\ChaseBehaviour.cs" />
     <Compile Include="Model\Behaviour\FollowPathBehaviour.cs" />
     <Compile Include="Model\Behaviour\HiddenBehaviour.cs" />
+    <Compile Include="Model\Behaviour\PredatorBehaviour.cs" />
     <Compile Include="Model\Behaviour\WanderBehaviour.cs" />
     <Compile Include="Model\Boid\EnemyBoid.cs" />
-    <Compile Include="Model\Boid\FoodBoid.cs" />
+    <Compile Include="Model\Boid\HerbivoreBoid.cs" />
     <Compile Include="Model\Boid\IBoid.cs" />
     <Compile Include="Model\Boid\IEnemy.cs" />
     <Compile Include="Model\Boid\IFood.cs" />
+    <Compile Include="Model\Boid\IHerbivore.cs" />
     <Compile Include="Model\Boid\IKeySteeringBoid.cs" />
     <Compile Include="Model\Boid\ILife.cs" />
+    <Compile Include="Model\Boid\IPredator.cs" />
     <Compile Include="Model\Boid\KeySteeringBoid.cs" />
+    <Compile Include="Model\Boid\PredatorBoid.cs" />
     <Compile Include="Model\Boid\TrainBoid.cs" />
     <Compile Include="Model\Field\ArriveField.cs" />
     <Compile Include="Model\Behaviour\AlignBehaviour.cs" />
@@ -123,6 +128,7 @@
     <Compile Include="Model\Field\IObstacleField.cs" />
     <Compile Include="Model\Field\Obstacle.cs" />
     <Compile Include="Model\Field\PathFollowingField.cs" />
+    <Compile Include="Model\Field\PredatorBoidsField.cs" />
     <Compile Include="Model\Field\SteeringByKeysField.cs" />
     <Compile Include="Model\Field\WanderingField.cs" />
     <Compile Include="Model\Geometry.cs" />
@@ -145,6 +151,7 @@
     <Compile Include="Renderer\KeySteeringRenderer.cs" />
     <Compile Include="Renderer\PathFollowingRenderer.cs" />
     <Compile Include="Renderer\Point.cs" />
+    <Compile Include="Renderer\PredatorBoidsRenderer.cs" />
     <Compile Include="Renderer\RendererSkiaSharp.cs" />
     <Compile Include="Renderer\WanderingRenderer.cs" />
   </ItemGroup>

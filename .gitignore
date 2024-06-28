@@ -16,6 +16,8 @@ HiddenBoids/bin/
 HiddenBoids/obj/
 KeySteeringBoids/bin/
 KeySteeringBoids/obj/
+PredatorBoids/bin/
+PredatorBoids/obj/
 packages/
 *.lock
 *.ide

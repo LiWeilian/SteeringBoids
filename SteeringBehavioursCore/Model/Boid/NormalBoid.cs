@@ -4,8 +4,8 @@ namespace SteeringBehavioursCore.Model.Boid
 {
     public class NormalBoid : IBoid
     {
-        private const int PositionsToRemember = 25;
-        private readonly List<Behaviour.Behaviour> _behaviours;
+        protected const int PositionsToRemember = 25;
+        protected readonly List<Behaviour.Behaviour> _behaviours;
 
         public float Size { get; set; }
         public Position Position { get; set; }
@@ -30,7 +30,7 @@ namespace SteeringBehavioursCore.Model.Boid
             _behaviours.Add(behaviour);
         }
 
-        public void Move(float stepSize)
+        public virtual void Move(float stepSize)
         {
             _behaviours.ForEach(behaviour => behaviour.CalcVelocity(this));
             //fixed speed
