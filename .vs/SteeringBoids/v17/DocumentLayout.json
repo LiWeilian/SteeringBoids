@@ -1,97 +1,113 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\work_lab\\GitHub\\SteeringBoids\\",
+  "WorkspaceRootPath": "C:\\work_codes\\GitHub\\SteeringBoids\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_codes\\github\\steeringboids\\aicore\\neuralnetwork\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\neuralnetwork\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_codes\\github\\steeringboids\\aicore\\neuralnetwork\\neurallayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\neuralnetwork\\neurallayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_codes\\github\\steeringboids\\aicore\\ga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\ga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_codes\\github\\steeringboids\\aicore\\ga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\ga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_codes\\github\\steeringboids\\steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\predatorboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\predatorboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\predatorboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\chasebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\chasebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\chasebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\arrivebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\arrivebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\arrivebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\velocity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\velocity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\velocity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\predatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\predatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\predatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\herbivoreboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\herbivoreboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\herbivoreboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\ifood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\ifood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\ifood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8E5AD0C-4FE1-4F99-9CDF-187DBB4A343B}|PredatorBoids\\PredatorBoids.csproj|c:\\work_lab\\github\\steeringboids\\predatorboids\\formpredatorboids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8E5AD0C-4FE1-4F99-9CDF-187DBB4A343B}|PredatorBoids\\PredatorBoids.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\predatorboids\\formpredatorboids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8E5AD0C-4FE1-4F99-9CDF-187DBB4A343B}|PredatorBoids\\PredatorBoids.csproj|solutionrelative:predatorboids\\formpredatorboids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\alignbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\alignbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\alignbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\normalboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\normalboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\normalboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\trainboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\trainboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\trainboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\keysteeringboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\keysteeringboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\keysteeringboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\hiddenbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\hiddenbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\hiddenbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\flockingboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\flockingboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\flockingboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidboidsbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\avoidboidsbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidboidsbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidenemiesbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\avoidenemiesbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidenemiesbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\flockbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\flockingboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\controller\\flockingboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\flockingboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\flockingboidrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\flockingboidrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\flockingboidrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\iboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\boid\\iboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\iboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\predatorboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_codes\\GitHub\\SteeringBoids\\steeringbehaviourscore\\controller\\predatorboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\predatorboidscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -102,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 995,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,14 +127,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -142,306 +150,348 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChaseBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAUwEYAAAA1AAAA",
+              "DocumentIndex": 0,
+              "Title": "Neuron.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\Neuron.cs",
+              "RelativeDocumentMoniker": "AICore\\NeuralNetwork\\Neuron.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\Neuron.cs",
+              "RelativeToolTip": "AICore\\NeuralNetwork\\Neuron.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:37:22.722Z",
+              "WhenOpened": "2024-07-07T16:22:07.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PredatorBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAswEUAAAANAAAA",
+              "Title": "NeuralLayer.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "RelativeDocumentMoniker": "AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "RelativeToolTip": "AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:27:21.264Z",
+              "WhenOpened": "2024-07-07T16:21:50.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PredatorBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAVAAAA",
+              "DocumentIndex": 3,
+              "Title": "Population.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\GA\\Population.cs",
+              "RelativeDocumentMoniker": "AICore\\GA\\Population.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\GA\\Population.cs",
+              "RelativeToolTip": "AICore\\GA\\Population.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvwsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:38:01.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Velocity.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Velocity.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Velocity.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Velocity.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Velocity.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:05:25.195Z",
+              "WhenOpened": "2024-07-07T16:16:10.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PredatorBoidsField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAADUAAAA4AAAA",
+              "Title": "Chromosome.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\GA\\Chromosome.cs",
+              "RelativeDocumentMoniker": "AICore\\GA\\Chromosome.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\AICore\\GA\\Chromosome.cs",
+              "RelativeToolTip": "AICore\\GA\\Chromosome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:16:52.619Z",
+              "WhenOpened": "2024-07-07T16:15:05.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "ChaseBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\ChaseBehaviour.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwEYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:37:22.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PredatorBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\PredatorBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:38:01.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Velocity.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Velocity.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Velocity.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Velocity.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Velocity.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T09:05:25.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PredatorBoidsField.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAADUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:16:52.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PredatorBoidsRenderer.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
               "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAAD0AAAAUAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAgwCYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T07:47:03.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ArriveBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
               "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\ArriveBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T08:42:45.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T08:42:45.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HerbivoreBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABUAAAAZAAAA",
+              "DocumentIndex": 5,
+              "Title": "PredatorBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\PredatorBoid.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAswEUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:06:19.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormPredatorBoids.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\PredatorBoids\\FormPredatorBoids.cs",
-              "RelativeDocumentMoniker": "PredatorBoids\\FormPredatorBoids.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\PredatorBoids\\FormPredatorBoids.cs",
-              "RelativeToolTip": "PredatorBoids\\FormPredatorBoids.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:21:22.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IFood.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:24:25.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AlignBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T08:41:53.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T06:27:21.264Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "NormalBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAMAAAA",
+              "Title": "HerbivoreBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\HerbivoreBoid.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T08:57:39.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HiddenBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAUwDsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:05:49.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T06:06:19.555Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "KeySteeringBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAUwC8AAAAZAAAA",
+              "Title": "FormPredatorBoids.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\PredatorBoids\\FormPredatorBoids.cs",
+              "RelativeDocumentMoniker": "PredatorBoids\\FormPredatorBoids.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\PredatorBoids\\FormPredatorBoids.cs",
+              "RelativeToolTip": "PredatorBoids\\FormPredatorBoids.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:05:56.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:21:22.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "TrainBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBoAAAAMAAAA",
+              "Title": "IFood.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\IFood.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:06:44.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:24:25.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AlignBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AlignBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T08:41:53.044Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "FlockingBoidsField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Title": "NormalBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\NormalBoid.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:03:25.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T08:57:39.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "FlockBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAFAAAA",
+              "Title": "HiddenBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\HiddenBehaviour.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAUwDsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:48:50.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AvoidBoidsBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T07:51:20.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:05:49.751Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "AvoidEnemiesBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Title": "KeySteeringBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\KeySteeringBoid.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAUwC8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T07:51:25.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:05:56.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TrainBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\TrainBoid.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T09:06:44.285Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "FlockingBoidsController.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "FlockingBoidsField.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\FlockingBoidsField.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T07:52:41.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FlockingBoidRenderer.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T07:46:30.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:06:15.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:03:25.607Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "FlockBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\FlockBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:48:50.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AvoidBoidsBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidBoidsBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T07:51:20.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AvoidEnemiesBehaviour.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidEnemiesBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T07:51:25.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FlockingBoidsController.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\FlockingBoidsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T07:52:41.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FlockingBoidRenderer.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\FlockingBoidRenderer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T07:46:30.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IBoid.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\IBoid.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:06:15.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "PredatorBoidsController.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
+              "DocumentMoniker": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
+              "ToolTip": "C:\\work_codes\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
               "RelativeToolTip": "SteeringBehavioursCore\\Controller\\PredatorBoidsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:06:09.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T06:06:09.997Z"
             }
           ]
         }

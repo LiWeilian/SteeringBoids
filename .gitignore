@@ -1,5 +1,7 @@
 SteeringBehavioursCore/bin/
 SteeringBehavioursCore/obj/
+AICore/bin/
+AICore/obj/
 FlockingBoidsDemo/bin/
 FlockingBoidsDemo/obj/
 FlockingBoidsDemoWithGL/bin/
