@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AICore.NeuralNetwork
 {
-    internal class NeuralLayer
+    public class NeuralLayer
     {
         public string Name { get; private set; }
         public List<Neuron> Neurons { get; set; }

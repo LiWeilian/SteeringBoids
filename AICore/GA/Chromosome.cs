@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AICore.GA
 {
-    internal class Chromosome
+    public class Chromosome
     {
         private Random random = new Random(unchecked((int)DateTime.Now.Ticks));
         public double SelectedRatio { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AICore.NeuralNetwork
 {
-    internal class Neuron
+    public class Neuron
     {
         public double[] Weights { get; set; }
         public double Bias { get; set; }

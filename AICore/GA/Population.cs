@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AICore.GA
 {
-    internal class Population
+    public class Population
     {
         private Random random = new Random(unchecked((int)DateTime.Now.Ticks));
         public string PopName { get; private set; }
