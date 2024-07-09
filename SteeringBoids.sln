@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredatorBoids", "PredatorBo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AICore", "AICore\AICore.csproj", "{187AB095-997F-4382-9D63-8631DF827972}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvoidObstacleBoidsAI", "AvoidObstacleBoidsAI\AvoidObstacleBoidsAI.csproj", "{A246B545-65ED-4AA0-B118-642D8A7785F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{187AB095-997F-4382-9D63-8631DF827972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187AB095-997F-4382-9D63-8631DF827972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187AB095-997F-4382-9D63-8631DF827972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A246B545-65ED-4AA0-B118-642D8A7785F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A246B545-65ED-4AA0-B118-642D8A7785F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A246B545-65ED-4AA0-B118-642D8A7785F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A246B545-65ED-4AA0-B118-642D8A7785F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

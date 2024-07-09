@@ -32,6 +32,8 @@ namespace AICore.NeuralNetwork
 
         private string double_format = "0.###";
 
+        private NeuralNetworkOutputMessage output = null;
+
         #region 归一化数据
         private (double[], double[]) normalize_inputs(double[,] inputs)
         {
@@ -251,15 +253,16 @@ namespace AICore.NeuralNetwork
         public void train(double[,] inputs, double[] outputs, int epoches)
         {
             (inputs_mins, inputs_maxs) = normalize_inputs(inputs);
-            //for (int i = 0; i < inputs_mins.Length; i++)
-            //{
-            //    Console.WriteLine($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", Color.LightGreen);
-            //}
+            for (int i = 0; i < inputs_mins.Length; i++)
+            {
+                output?.Invoke($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
+            }
             (output_min, output_max) = normalize_array(outputs);
-            //Console.WriteLine($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}\r\n", Color.LightGreen);
-
-            //Console.WriteLine($"迭代次数[{epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", Color.LightGreen);
-
+            
+            output?.Invoke($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}", NNOutputMessageType.TrainInput);
+            
+            output?.Invoke($"迭代次数[{epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", NNOutputMessageType.TrainInput);
+            
             DisplayParams();
 
             for (int j = 0; j < epoches; j++)
@@ -280,25 +283,23 @@ namespace AICore.NeuralNetwork
 
         private void DisplayParams()
         {
-            /*
-            Console.WriteLine();
-            Console.WriteLine("模型参数：", Color.LightGreen);
+            output?.Invoke("模型参数：", NNOutputMessageType.TrainInfo);
             for (int i = 0; i < hidden_layers.Count; i++)
             {
-                Console.WriteLine($"隐藏层[{i + 1}, {hidden_layers[i].Name}]：", Color.Orange);
+                output?.Invoke($"隐藏层[{i + 1}, {hidden_layers[i].Name}]：", NNOutputMessageType.TrainInfo);
                 for (int j = 0; j < hidden_layers[i].Neurons.Count; j++)
                 {
-                    Console.WriteLine($"神经元[{j+1}]，权重：[{string.Join(", ", hidden_layers[i].Neurons[j].Weights)}]，偏置：[{hidden_layers[i].Neurons[j].Bias}]", Color.LightBlue);
+                    output?.Invoke($"神经元[{j + 1}]，权重：[{string.Join(", ", hidden_layers[i].Neurons[j].Weights)}]，偏置：[{hidden_layers[i].Neurons[j].Bias}]", NNOutputMessageType.TrainInfo);
                 }
             }
 
-            Console.WriteLine($"输出层[{output_layer.Name}]：", Color.Orange);
-            for(int i = 0; i < output_layer.Neurons.Count; i++)
+            output?.Invoke($"输出层[{output_layer.Name}]：", NNOutputMessageType.TrainInfo);
+            for (int i = 0; i < output_layer.Neurons.Count; i++)
             {
-                Console.WriteLine($"神经元[{i + 1}]，权重：[{string.Join(", ", output_layer.Neurons[i].Weights)}]，偏置：[{output_layer.Neurons[i].Bias}]", Color.LightBlue);
+                output?.Invoke($"神经元[{i + 1}]，权重：[{string.Join(", ", output_layer.Neurons[i].Weights)}]，偏置：[{output_layer.Neurons[i].Bias}]", NNOutputMessageType.TrainInfo);
             }
-            Console.WriteLine();
-            */
+            output?.Invoke("");
+            
         }
 
         public double test(double[,] inputs, double[] outputs)
@@ -334,7 +335,7 @@ namespace AICore.NeuralNetwork
                 predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
                 true_value = outputs[i];
 
-                //Console.WriteLine($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", Color.SkyBlue);
+                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", NNOutputMessageType.TestOutput);
             }
 
             double mean_square_error = 0;
@@ -345,8 +346,8 @@ namespace AICore.NeuralNetwork
 
             mean_square_error = mean_square_error / test_len;
 
-            //Console.WriteLine($"均方误差为：{mean_square_error.ToString("0.##########")}", Color.LightGreen);
-            //Console.WriteLine("以上为测试集\n", Color.Orange);
+            output?.Invoke($"均方误差为：{mean_square_error.ToString("0.##########")}", NNOutputMessageType.TestOutput);
+            output?.Invoke("以上为测试集\n", NNOutputMessageType.TestInfo);
 
             return mean_square_error;
         }
@@ -384,7 +385,7 @@ namespace AICore.NeuralNetwork
                 predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
                 true_value = outputs[i];
 
-                //Console.WriteLine($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", Color.SkyBlue);
+                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", NNOutputMessageType.TestOutput);
             }
 
             double mean_square_error = 0;
@@ -395,8 +396,8 @@ namespace AICore.NeuralNetwork
 
             mean_square_error = mean_square_error / test_len;
 
-            //Console.WriteLine($"均方误差为：{mean_square_error.ToString("0.##########")}", Color.LightGreen);
-            //Console.WriteLine("以上为测试集\n", Color.Orange);
+            output?.Invoke($"均方误差为：{mean_square_error.ToString("0.##########")}", NNOutputMessageType.TestOutput);
+            output?.Invoke("以上为测试集\n", NNOutputMessageType.TestInfo);
 
             return mean_square_error;
         }
@@ -420,21 +421,21 @@ namespace AICore.NeuralNetwork
 
             //
             (inputs_mins, inputs_maxs) = normalize_inputs(train_inputs);
-            //for (int i = 0; i < inputs_mins.Length; i++)
-            //{
-            //    Console.WriteLine($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", Color.LightGreen);
-            //}
+            for (int i = 0; i < inputs_mins.Length; i++)
+            {
+                output?.Invoke($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
+            }
             (output_min, output_max) = normalize_array(train_outputs);
-            //Console.WriteLine($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}\r\n", Color.LightGreen);
-
-            //Console.WriteLine($"迭代次数[{train_epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", Color.LightGreen);
-
+            
+            output?.Invoke($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}\r\n", NNOutputMessageType.TrainInput);
+            
+            output?.Invoke($"迭代次数[{train_epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", NNOutputMessageType.TrainInput);
             if (use_ga)
             {
                 //ga算法预优化参数，没什么用，均方误差很难小于0.0001，效果不及bp
-                //Console.WriteLine("开始使用GA算法预优化参数...", Color.Orange);
+                output?.Invoke("开始使用GA算法预优化参数...", NNOutputMessageType.TrainInfo);
                 ga(test_inputs, test_outputs);
-                //Console.WriteLine("优化完毕", Color.Orange);
+                output?.Invoke("GA优化完毕", NNOutputMessageType.TrainInfo);
                 //
             }
 
@@ -457,10 +458,10 @@ namespace AICore.NeuralNetwork
                 if ((j + 1) % 1000 == 0)
                 {
                     test(train_test_inputs, train_test_outputs);
-                    //Console.WriteLine($"以上是使用训练集进行测试\n", Color.Orange);
+                    output?.Invoke($"以上是使用训练集进行测试\n", NNOutputMessageType.TestInfo);
 
                     test(test_inputs, test_outputs);
-                    //Console.WriteLine($"以上是为第{j + 1}次迭代进行测试\n", Color.Orange);
+                    output?.Invoke($"以上是为第{j + 1}次迭代进行测试\n", NNOutputMessageType.TestInfo);
                 }
             }
 
@@ -497,9 +498,9 @@ namespace AICore.NeuralNetwork
                 //从归一化还原
                 predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
 
-                //Console.WriteLine($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}", Color.SkyBlue);
+                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}", NNOutputMessageType.PreditcOutput);
             }
-            //Console.WriteLine("以上为预测集", Color.Orange);
+            output?.Invoke($"以上为预测集\n", NNOutputMessageType.PredictInfo);
         }
 
         public void Export(string name)
@@ -513,13 +514,15 @@ namespace AICore.NeuralNetwork
             int hidden_layer_count,
             int num_of_neurons,
             double learning_rate,
-            bool use_ga = false)
+            bool use_ga = false,
+            NeuralNetworkOutputMessage output = null)
         {
             this.input_dimension = input_dimension;
             this.output_dimension = output_dimension;
             this.numOfNeurons = num_of_neurons;
             this.learning_rate = learning_rate;
             this.use_ga = use_ga;
+            this.output = output;
 
             initialize_hidden_layers(input_dimension, hidden_layer_count);
             initilize_output_layer(output_dimension);
@@ -576,7 +579,6 @@ namespace AICore.NeuralNetwork
             while (true)
             {
                 pop.Generation++;
-                //Console.WriteLine($"Generation: {pop.Generation}");
                 if (pop.Generation > 1)
                 {
                     pop.PopulationCrossover();
@@ -599,11 +601,8 @@ namespace AICore.NeuralNetwork
                 {
                     historyChromosomes.Add(chrom.GetCopy());
                 }
-
-                //FitnessForSum.OutputBest(pop.Chromosomes.FirstOrDefault(), $"Generation: {pop.Generation} Best ");
-
                 double best_fitness = calc_fitness(pop.Chromosomes.FirstOrDefault(), test_inputs, test_outputs);
-                //Console.WriteLine($"第[{pop.Generation}]代最佳均方误差：{1 / best_fitness}", Color.LightBlue);
+                output?.Invoke($"第[{pop.Generation}]代最佳均方误差：{1 / best_fitness}", NNOutputMessageType.TrainOutput);
                 calc_count++;
                 if ((1 / best_fitness <= 0.0001) || calc_count >= 10000)
                 {
@@ -615,7 +614,7 @@ namespace AICore.NeuralNetwork
                         xoverRatio, popSize, historyChromosomes, mutation_ratio);
 
             double fitness = calc_fitness(best_pop.Chromosomes.FirstOrDefault(), test_inputs, test_outputs);
-            //Console.WriteLine($"共迭代运算[{pop.Generation}]次，最终最佳均方误差：{1 / fitness}", Color.LightBlue);
+            output?.Invoke($"共迭代运算[{pop.Generation}]次，最终最佳均方误差：{1 / fitness}", NNOutputMessageType.TrainOutput);
 
         }
 
@@ -684,9 +683,24 @@ namespace AICore.NeuralNetwork
         }
     }
 
-    public delegate void NeuralNetworkOutputMessage(string msg, NNOutputMessageType type);
+    public delegate void NeuralNetworkOutputMessage(string msg, NNOutputMessageType type = NNOutputMessageType.Normal);
     public enum NNOutputMessageType
     {
-
+        Normal = 0,
+        TrainInput = 1,
+        TrainOutput = 2,
+        TrainInfo = 3,
+        TrainWarning = 4,
+        TrainError = 5,
+        TestInput = 6,
+        TestOutput = 7,
+        TestInfo = 8,
+        TestWarning = 9,
+        TestError = 10,
+        PredictInput = 11,
+        PreditcOutput = 12,
+        PredictInfo = 13,
+        PredictWarning = 14,
+        PredictError = 15,
     }
 }
