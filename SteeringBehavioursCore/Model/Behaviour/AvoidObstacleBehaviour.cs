@@ -44,7 +44,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
 
         private bool DetectObstacle(float x, float y, float x2, float y2, Obstacle obstacle)
         {
-            return obstacle.LineDetected(x, y, x2, y2); ;
+            return obstacle.LineDetected(x, y, x2, y2);
         }
     }
 }

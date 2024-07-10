@@ -4,35 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
-using SteeringBehavioursCore.Model.Behaviour;
 
 namespace SteeringBehavioursCore.Model.Boid
 {
-    internal class PredatorBoid : NormalBoid, IEnemy, ILife, IPredator
+    internal class AvoidObstacleAIBoid : NormalBoid, ISurvive, ILife
     {
         private System.Timers.Timer _timer;
-        public PredatorBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
+        public float SurviveFactor { get; set; }
+        public float Life { get; private set; }
+
+        public AvoidObstacleAIBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
         {
+            SurviveFactor = 1f;
             Life = 1f;
             start_life_timer();
         }
-        public float Life { get; private set; }
 
         public void Eat(IFood food)
         {
-            if (food == null)
-            {
-                return;
-            }
-            float amount = 1 - Life;
-            if (amount >= food.Quantity)
-            {
-                Life += food.Consume(food.Quantity);
-            }
-            else
-            {
-                Life += food.Consume(Math.Max(amount, 0.123f));
-            }
+            //
         }
 
         private void start_life_timer()

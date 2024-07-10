@@ -103,6 +103,7 @@
     <Compile Include="Model\Behaviour\HiddenBehaviour.cs" />
     <Compile Include="Model\Behaviour\PredatorBehaviour.cs" />
     <Compile Include="Model\Behaviour\WanderBehaviour.cs" />
+    <Compile Include="Model\Boid\AvoidObstacleAIBoid.cs" />
     <Compile Include="Model\Boid\EnemyBoid.cs" />
     <Compile Include="Model\Boid\HerbivoreBoid.cs" />
     <Compile Include="Model\Boid\IBoid.cs" />
@@ -129,6 +130,8 @@
     <Compile Include="Model\Field\BaseField.cs" />
     <Compile Include="Model\Field\HiddenField.cs" />
     <Compile Include="Model\Field\IObstacleField.cs" />
+    <Compile Include="Model\Boid\ISurvive.cs" />
+    <Compile Include="Model\Field\ISurviveField.cs" />
     <Compile Include="Model\Field\Obstacle.cs" />
     <Compile Include="Model\Field\PathFollowingField.cs" />
     <Compile Include="Model\Field\PredatorBoidsField.cs" />

@@ -11,10 +11,10 @@ using SteeringBehavioursCore.Model.Interaction;
 
 namespace SteeringBehavioursCore.Model.Field
 {
-    public class AvoidObstacleAIField : BaseField, IObstacleField
+    public class AvoidObstacleAIField : BaseField, IObstacleField, ISurviveField
     {
         public List<Obstacle> Obstacles { get; }
-        private const int _boidsCount = 50;
+        private const int _boidsCount = 20;
         private const int _obstacleCount = 5;
         public AvoidObstacleAIField()
         {
@@ -87,7 +87,7 @@ namespace SteeringBehavioursCore.Model.Field
             for (var i = 0; i < Boids.GetLength(0); i++)
             {
                 float speed = (float)(1 + rnd.NextDouble());
-                Boids[i] = new NormalBoid(
+                Boids[i] = new AvoidObstacleAIBoid(
                     (float)rnd.NextDouble() * _width,
                     (float)rnd.NextDouble() * _height,
                     (float)(rnd.NextDouble() - .5),
@@ -98,6 +98,11 @@ namespace SteeringBehavioursCore.Model.Field
                 behaviours.ForEach(
                     behaviour => Boids[i].AddBehaviour(behaviour));
             }
+        }
+
+        public float CalcSurviveFactor(float x, float y)
+        {
+            return 1f;
         }
     }
 
