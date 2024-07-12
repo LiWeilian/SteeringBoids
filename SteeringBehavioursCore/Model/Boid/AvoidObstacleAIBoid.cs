@@ -7,11 +7,18 @@ using System.Timers;
 
 namespace SteeringBehavioursCore.Model.Boid
 {
-    internal class AvoidObstacleAIBoid : NormalBoid, ISurvive, ILife
+    internal class AvoidObstacleAIBoid : NormalBoid, ISurvive, ILife, IObstacleDetector
     {
         private System.Timers.Timer _timer;
         public float SurviveFactor { get; set; }
         public float Life { get; private set; }
+
+        #region 与障碍物交点
+        public Position FrontObstacle { get; set; }
+        public Position LeftObstacle { get; set; }
+        public Position RightObstacle { get; set; }
+        public List<Position> Intersections { get; set; }
+        #endregion
 
         public AvoidObstacleAIBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
         {
@@ -45,6 +52,8 @@ namespace SteeringBehavioursCore.Model.Boid
                 }
             }
         }
+
+
 
         public override void Move(float stepSize)
         {

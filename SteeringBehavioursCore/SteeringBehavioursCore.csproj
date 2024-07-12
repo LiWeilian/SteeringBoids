@@ -99,6 +99,7 @@
     <Compile Include="Controller\WanderingController.cs" />
     <Compile Include="Model\Behaviour\AvoidObstacleBehaviour.cs" />
     <Compile Include="Model\Behaviour\ChaseBehaviour.cs" />
+    <Compile Include="Model\Behaviour\DetectObstacleBehaviour.cs" />
     <Compile Include="Model\Behaviour\FollowPathBehaviour.cs" />
     <Compile Include="Model\Behaviour\HiddenBehaviour.cs" />
     <Compile Include="Model\Behaviour\PredatorBehaviour.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Model\Boid\IHerbivore.cs" />
     <Compile Include="Model\Boid\IKeySteeringBoid.cs" />
     <Compile Include="Model\Boid\ILife.cs" />
+    <Compile Include="Model\Boid\IObstacleDetector.cs" />
     <Compile Include="Model\Boid\IPredator.cs" />
     <Compile Include="Model\Boid\KeySteeringBoid.cs" />
     <Compile Include="Model\Boid\PredatorBoid.cs" />

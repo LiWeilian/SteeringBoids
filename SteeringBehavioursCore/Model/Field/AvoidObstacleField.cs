@@ -99,6 +99,16 @@ namespace SteeringBehavioursCore.Model.Field
                     behaviour => Boids[i].AddBehaviour(behaviour));
             }
         }
+
+        public (float?, float?) NearestObstacleIntersection(float x1, float y1, float x2, float y2)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Position> ObstacleIntersections(float x1, float y1, float x2, float y2)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     

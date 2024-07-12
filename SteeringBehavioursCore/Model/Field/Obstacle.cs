@@ -76,6 +76,63 @@ namespace SteeringBehavioursCore.Model.Field
                 maxY);
         }
 
+        public (List<float?>, List<float?>) LineIntersectPoint(float x, float y, float x2, float y2)
+        {
+            if (!LineDetected(x, y, x2, y2))
+            {
+                return (null, null);
+            }
+
+            List<float?> xs = new List<float?>();
+            List<float?> ys = new List<float?>();
+
+            float? intersect_x = null;
+            float? intersect_y = null;
+            
+            (intersect_x, intersect_y) = Geometry.FindIntersection2(x, y, x2, y2, 
+                Points[0].X, Points[0].Y, Points[1].X, Points[1].Y);
+            if (intersect_x != null && intersect_y != null 
+                && PointDetected(intersect_x.Value, intersect_y.Value)
+                )
+            {
+                xs.Add(intersect_x);
+                ys.Add(intersect_y);
+            }
+            
+            (intersect_x, intersect_y) = Geometry.FindIntersection2(x, y, x2, y2,
+                Points[1].X, Points[1].Y, Points[2].X, Points[2].Y);
+            if (intersect_x != null && intersect_y != null
+                && PointDetected(intersect_x.Value, intersect_y.Value)
+                )
+            {
+                xs.Add(intersect_x);
+                ys.Add(intersect_y);
+            }
+            
+            
+            (intersect_x, intersect_y) = Geometry.FindIntersection2(x, y, x2, y2,
+                Points[2].X, Points[2].Y, Points[3].X, Points[3].Y);
+            if (intersect_x != null && intersect_y != null
+                && PointDetected(intersect_x.Value, intersect_y.Value)
+                )
+            {
+                xs.Add(intersect_x);
+                ys.Add(intersect_y);
+            }
+            
+            (intersect_x, intersect_y) = Geometry.FindIntersection2(x, y, x2, y2,
+                Points[3].X, Points[3].Y, Points[0].X, Points[0].Y);
+            if (intersect_x != null && intersect_y != null
+                && PointDetected(intersect_x.Value, intersect_y.Value)
+                )
+            {
+                xs.Add(intersect_x);
+                ys.Add(intersect_y);
+            }
+            
+            return (xs, ys);
+        }
+
         public Position HiddenPosition { get; private set; }
 
         public void UpdateHiddenPosition(List<Position> antiPositioins)

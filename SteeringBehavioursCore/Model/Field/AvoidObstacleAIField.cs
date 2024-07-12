@@ -14,8 +14,9 @@ namespace SteeringBehavioursCore.Model.Field
     public class AvoidObstacleAIField : BaseField, IObstacleField, ISurviveField
     {
         public List<Obstacle> Obstacles { get; }
-        private const int _boidsCount = 20;
-        private const int _obstacleCount = 5;
+
+        private const int _boidsCount = 1;
+        private const int _obstacleCount = 20;
         public AvoidObstacleAIField()
         {
             _width = Width;
@@ -76,6 +77,7 @@ namespace SteeringBehavioursCore.Model.Field
         {
             var behaviours = new List<Behaviour.Behaviour>
             {
+                new DetectObstacleBehaviour(this),
                 new FlockBehaviour(this),
                 new AlignBehaviour(this),
                 new AvoidBoidsBehaviour(this),
@@ -104,7 +106,64 @@ namespace SteeringBehavioursCore.Model.Field
         {
             return 1f;
         }
-    }
 
-    
+        public (float?, float?) NearestObstacleIntersection(float x1, float y1, float x2, float y2)
+        {
+            float? nx = null;
+            float? ny = null;
+            float? dist = null;
+            foreach (var obstacle in Obstacles)
+            {
+                List<float?> xs = new List<float?>();
+                List<float?> ys = new List<float?>();
+                (xs, ys) = obstacle.LineIntersectPoint(x1, y1, x2, y2);
+                if (xs != null && ys != null)
+                {
+                    for (int i = 0; i < xs.Count; i++)
+                    {
+                        if (nx == null)
+                        {
+                            nx = xs[i];
+                            ny = ys[i];
+                            dist = (float)Math.Sqrt(Math.Pow((nx - x1).Value, 2) + Math.Pow((ny - y1).Value, 2));
+                        } else
+                        {
+                            float? x = xs[i];
+                            float? y = ys[i];
+                            float dist_temp = (float)Math.Sqrt(Math.Pow((x - x1).Value, 2) + Math.Pow((y - y1).Value, 2));
+
+                            if (dist_temp < dist)
+                            {
+                                nx = x;
+                                ny = y;
+                                dist = dist_temp;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return (nx, ny);
+        }
+
+        public List<Position> ObstacleIntersections(float x1, float y1, float x2, float y2)
+        {
+            List<Position> intersections = new List<Position>();
+            foreach (var obstacle in Obstacles)
+            {
+                List<float?> xs = new List<float?>();
+                List<float?> ys = new List<float?>();
+                (xs, ys) = obstacle.LineIntersectPoint(x1, y1, x2, y2);
+                if (xs != null && ys != null)
+                {
+                    for (int i = 0; i < xs.Count; i++)
+                    {
+                        intersections.Add(new Position(xs[i].Value, ys[i].Value));
+                    }
+                }
+            }
+
+            return intersections;
+        }
+    }    
 }
