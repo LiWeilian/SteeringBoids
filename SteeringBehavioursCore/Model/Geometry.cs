@@ -96,6 +96,19 @@ namespace SteeringBehavioursCore.Model
                 && pY >= rectangleMinY && pY <= rectangleMaxY;
         }
 
+        public static bool PointIntersectRetangle2(
+            float rectangleMinX,
+            float rectangleMinY,
+            float rectangleMaxX,
+            float rectangleMaxY,
+            float pX,
+            float pY)
+        {
+            float tolerance = 0.001f;
+            return pX >= rectangleMinX - tolerance && pX <= rectangleMaxX + tolerance
+                && pY >= rectangleMinY - tolerance && pY <= rectangleMaxY + tolerance;
+        }
+
         public static bool RectangleIntersectRectangle(
             float rect1MinX,
             float rect1MinY,

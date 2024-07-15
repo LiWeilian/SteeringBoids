@@ -17,12 +17,55 @@ namespace SteeringBehavioursCore.Model.Boid
         public Position FrontObstacle { get; set; }
         public Position LeftObstacle { get; set; }
         public Position RightObstacle { get; set; }
+        public Position FrontLeftObstacle { get; set; }
+        public Position FrontRightObstacle { get; set; }
+        public Position RearObstacle { get; set; }
+        public Position RearLeftObstacle { get; set; }
+        public Position RearRightObstacle { get; set; }
         public List<Position> Intersections { get; set; }
+        public List<Position> FrontIntersections { get; set; }
+        public List<Position> FrontLeftIntersections { get; set; }
+        public List<Position> FrontRightIntersections { get; set; }
+        public List<Position> LeftIntersections { get; set; }
+        public List<Position> RightIntersections { get; set; }
+        public List<Position> RearIntersections { get; set; }
+        public List<Position> RearLeftIntersections { get; set; }
+        public List<Position> RearRightIntersections { get; set; }
+        public float? ObstacleDistance
+        {
+            get
+            {
+                return _obstacle_dist;
+            }
+            set
+            {
+                _obstacle_dist = value;
+
+                if (_obstacle_dist != null)
+                {
+                    float factor = _obstacle_dist.Value - 100f;
+                    if (factor < 0f)
+                    {
+                        factor /= 500f;
+
+                        if (factor < -0.2f)
+                        {
+                            factor = -0.2f;
+                        }
+                    } else
+                    {
+                        factor /= 1000f;
+                    }
+                    SurviveFactor = factor;
+                }
+            }
+        }
+        private float? _obstacle_dist;
         #endregion
 
         public AvoidObstacleAIBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
         {
-            SurviveFactor = 1f;
+            SurviveFactor = 0f;
             Life = 1f;
             start_life_timer();
         }
@@ -44,8 +87,9 @@ namespace SteeringBehavioursCore.Model.Boid
         {
             if (Life > 0)
             {
-                float currentSpeed = Velocity.GetCurrentSpeed();
-                Life -= 0.005f * currentSpeed;
+                //float currentSpeed = Velocity.GetCurrentSpeed();
+                //Life -= 0.005f * currentSpeed;
+                Life += SurviveFactor;
                 if (Life < 0f)
                 {
                     Life = 0f;

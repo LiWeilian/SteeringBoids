@@ -57,7 +57,7 @@ namespace SteeringBehavioursCore.Model.Field
 
         public bool PointDetected(float x, float y)
         {
-            return Geometry.PointIntersectRetangle(Points[0].X,
+            return Geometry.PointIntersectRetangle2(Points[0].X,
                 Points[0].Y,
                 Points[2].X,
                 Points[2].Y,

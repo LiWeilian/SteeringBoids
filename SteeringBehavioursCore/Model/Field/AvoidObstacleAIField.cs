@@ -15,8 +15,8 @@ namespace SteeringBehavioursCore.Model.Field
     {
         public List<Obstacle> Obstacles { get; }
 
-        private const int _boidsCount = 1;
-        private const int _obstacleCount = 20;
+        private const int _boidsCount = 3;
+        private const int _obstacleCount = 3;
         public AvoidObstacleAIField()
         {
             _width = Width;
