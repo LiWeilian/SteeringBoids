@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AICore.GA;
 using System;
 using System.Linq;
@@ -7,7 +6,10 @@ using System.Linq;
 
 namespace AICore.NeuralNetwork
 {
-    public class NeuralNetwork
+    /// <summary>
+    /// 支持多个输出
+    /// </summary>
+    internal class NeuralNetwork
     {
         private List<NeuralLayer> hidden_layers;
         //多个隐藏层
@@ -26,6 +28,8 @@ namespace AICore.NeuralNetwork
         private double[] inputs_maxs;
         private double output_min;
         private double output_max;
+        private double[] outputs_mins;
+        private double[] outputs_maxs;
 
         private int input_dimension;
         private int output_dimension;
@@ -35,7 +39,7 @@ namespace AICore.NeuralNetwork
         private NeuralNetworkOutputMessage output = null;
 
         #region 归一化数据
-        private (double[], double[]) normalize_inputs(double[,] inputs)
+        private (double[], double[]) normalize_data(double[,] inputs)
         {
             double[] mins = new double[inputs.GetLength(1)];
             for (int i = 0; i < mins.Length; i++)
@@ -143,6 +147,27 @@ namespace AICore.NeuralNetwork
             return output;
         }
 
+        //输出层计算
+        private double[] compute_output_multi(double[] inputs)
+        {
+            List<double> ret = new List<double>();
+
+            //输出层神经元权重值数量与输出数据维度一致
+            for (int i = 0; i < output_dimension; i++)
+            {
+                double sum = 0.0;
+                for (int j = 0; j < output_layer.Neurons.Count; j++)
+                {
+                    sum += inputs[j] * output_layer.Neurons[j].Weights[i];
+                }
+                double value = (sum + output_layer.Neurons.Sum(n => n.Bias)) / output_layer.Neurons.Count;
+                value = active(value);
+                ret.Add(value);
+            }
+
+            return ret.ToArray();
+        }
+
         //计算前向输出梯度误差
         private double pro_output(double predict, double real)
         {
@@ -182,7 +207,7 @@ namespace AICore.NeuralNetwork
         }
 
         //bp算法
-        private void bp(double[] inputs, double real)
+        private void bp(double[] inputs, double[] real)
         {
             //隐藏层
             List<double[]> hidden_layer_ouputs = new List<double[]>();
@@ -198,83 +223,93 @@ namespace AICore.NeuralNetwork
             double[] last_hidden_layer_output = hidden_layer_ouputs.LastOrDefault();
 
             //输出层
-            double output_final = compute_output(last_hidden_layer_output);
-            //计算前向输出误差
-            double error_output = pro_output(output_final, real);
+            double[] output_final = compute_output_multi(last_hidden_layer_output);
 
-            //更新输出层权重和偏置
-            for (int i = 0; i < numOfNeurons; i++)
+            for (int i_out = 0; i_out < output_final.Length; i_out++)
             {
-                output_layer.Neurons[i].Weights[0] = output_layer.Neurons[i].Weights[0]
-                    + learning_rate * error_output * last_hidden_layer_output[i];
-            }
-            output_layer.Bias = output_layer.Bias + learning_rate * error_output;
+                //计算前向输出误差
+                double error_output = pro_output(output_final[i_out], real[i_out]);
 
-            //更新隐藏层权重和偏置
-            //最后的隐藏层
-            NeuralLayer last_hidden_layer = hidden_layers.LastOrDefault();
-            double[] error_last_hl = new double[numOfNeurons];
-            for (int i = 0; i < numOfNeurons; i++)
-            {
-                error_last_hl[i] = derivative(last_hidden_layer_output[i]) * (error_output * output_layer.Neurons[i].Weights[0]);
-            }
-
-            for (int i = 0; i < numOfNeurons; i++)
-            {
-                last_hidden_layer.Neurons[i].Update(hidden_layer_ouputs[hidden_layer_ouputs.Count - 2], learning_rate, error_last_hl[i]);
-            }
-
-            //其他隐藏层
-            double[] next_hl_error = error_last_hl;
-            for (int i = hidden_layers.Count - 2; i >= 0; i--)
-            {
-                NeuralLayer current_layer = hidden_layers[i];
-                NeuralLayer next_layer = hidden_layers[i + 1];
-                double[] current_layer_output = hidden_layer_ouputs[i + 1];
-                double[] pre_layer_output = hidden_layer_ouputs[i];
-                double[] current_hl_error = new double[numOfNeurons];
-                for (int j = 0; j < next_hl_error.Length; j++)
+                //更新输出层权重和偏置
+                for (int i = 0; i < numOfNeurons; i++)
                 {
-                    for (int k = 0; k < numOfNeurons; k++)
+                    output_layer.Neurons[i].Weights[i_out] = output_layer.Neurons[i].Weights[i_out]
+                        + learning_rate * error_output * last_hidden_layer_output[i];
+                    output_layer.Neurons[i].Bias += learning_rate * error_output;
+                }
+                output_layer.Bias = output_layer.Bias + learning_rate * error_output;
+
+                //更新隐藏层权重和偏置
+                //最后的隐藏层
+                NeuralLayer last_hidden_layer = hidden_layers.LastOrDefault();
+                double[] error_last_hl = new double[numOfNeurons];
+                for (int i = 0; i < numOfNeurons; i++)
+                {
+                    error_last_hl[i] = derivative(last_hidden_layer_output[i]) * (error_output * output_layer.Neurons[i].Weights[0]);
+                }
+
+                for (int i = 0; i < numOfNeurons; i++)
+                {
+                    last_hidden_layer.Neurons[i].Update(hidden_layer_ouputs[hidden_layer_ouputs.Count - 2], learning_rate, error_last_hl[i]);
+                }
+
+                //其他隐藏层
+                double[] next_hl_error = error_last_hl;
+                for (int i = hidden_layers.Count - 2; i >= 0; i--)
+                {
+                    NeuralLayer current_layer = hidden_layers[i];
+                    NeuralLayer next_layer = hidden_layers[i + 1];
+                    double[] current_layer_output = hidden_layer_ouputs[i + 1];
+                    double[] pre_layer_output = hidden_layer_ouputs[i];
+                    double[] current_hl_error = new double[numOfNeurons];
+                    for (int j = 0; j < next_hl_error.Length; j++)
                     {
-                        current_hl_error[k] += derivative(current_layer_output[k]) * next_hl_error[j] * next_layer.Neurons[j].Weights[k];
+                        for (int k = 0; k < numOfNeurons; k++)
+                        {
+                            current_hl_error[k] += derivative(current_layer_output[k]) * next_hl_error[j] * next_layer.Neurons[j].Weights[k];
+                        }
                     }
-                }
 
-                for (int j = 0; j < numOfNeurons; j++)
-                {
-                    current_layer.Neurons[j].Update(pre_layer_output, learning_rate, current_hl_error[j]);
+                    for (int j = 0; j < numOfNeurons; j++)
+                    {
+                        current_layer.Neurons[j].Update(pre_layer_output, learning_rate, current_hl_error[j]);
+                    }
+                    next_hl_error = current_hl_error;
                 }
-                next_hl_error = current_hl_error;
             }
-
         }
 
-        public void train(double[,] inputs, double[] outputs, int epoches)
+        public void train(double[,] inputs, double[,] outputs, int epoches)
         {
-            (inputs_mins, inputs_maxs) = normalize_inputs(inputs);
+            (inputs_mins, inputs_maxs) = normalize_data(inputs);
             for (int i = 0; i < inputs_mins.Length; i++)
             {
                 output?.Invoke($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
             }
-            (output_min, output_max) = normalize_array(outputs);
-            
-            output?.Invoke($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}", NNOutputMessageType.TrainInput);
-            
+            (outputs_mins, outputs_maxs) = normalize_data(outputs);
+            for (int i = 0; i < outputs_mins.Length; i++)
+            {
+                output?.Invoke($"输出集[{i}]归一化的最大值和最小值分别为：{outputs_maxs[i].ToString(double_format)}，{outputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
+            }
             output?.Invoke($"迭代次数[{epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", NNOutputMessageType.TrainInput);
-            
+
             DisplayParams();
 
             for (int j = 0; j < epoches; j++)
             {
                 for (int i = 0; i < inputs.GetLength(0); i++)
                 {
-                    double[] data = new double[input_dimension];
+                    double[] input_data_row = new double[input_dimension];
                     for (int k = 0; k < input_dimension; k++)
                     {
-                        data[k] = inputs[i, k];
+                        input_data_row[k] = inputs[i, k];
                     }
-                    bp(data, outputs[i]);
+                    double[] output_data_row = new double[output_dimension];
+                    for(int k = 0;k < output_dimension; k++)
+                    {
+                        output_data_row[k] = outputs[i, k];
+                    }
+                    bp(input_data_row, output_data_row);
                 }
             }
 
@@ -299,13 +334,12 @@ namespace AICore.NeuralNetwork
                 output?.Invoke($"神经元[{i + 1}]，权重：[{string.Join(", ", output_layer.Neurons[i].Weights)}]，偏置：[{output_layer.Neurons[i].Bias}]", NNOutputMessageType.TrainInfo);
             }
             output?.Invoke("");
-            
         }
 
-        public double test(double[,] inputs, double[] outputs)
+        public double[] test(double[,] inputs, double[,] outputs)
         {
             int test_len = inputs.GetLength(0);
-            double[] MSE = new double[test_len];
+            double[,] MSE = new double[test_len, output_dimension];
             for (int i = 0; i < test_len; i++)
             {
                 double[] input_row = new double[input_dimension];
@@ -321,138 +355,113 @@ namespace AICore.NeuralNetwork
                 {
                     input_row_norm[j] = normalize_single(input_row[j], inputs_mins[j], inputs_maxs[j]);
                 }
-                double true_value = normalize_single(outputs[i], output_min, output_max);
+
+                List<double> true_value_list = new List<double>();
+                for (int j = 0; j < output_dimension; j++)
+                {
+                    double true_value = normalize_single(outputs[i,j], outputs_mins[j], outputs_maxs[j]);
+                    true_value_list.Add(true_value);
+                }
                 //计算
                 double[] input_values = input_row_norm;
                 for (int j = 0; j < hidden_layers.Count; j++)
                 {
                     input_values = compute_hidden(input_values, hidden_layers[j]);
                 }
-                double predict_value = compute_output(input_values);
-                //求均方差
-                MSE[i] = (predict_value - true_value) * (predict_value - true_value);
+                double[] predict_values = compute_output_multi(input_values);
                 //从归一化还原
-                predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
-                true_value = outputs[i];
+                for (int j = 0; j < output_dimension; j++)
+                {
+                    predict_values[j] = (predict_values[j] * (outputs_maxs[j] - outputs_mins[j] + 1)) - 1 + outputs_mins[j];
+                }
 
-                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", NNOutputMessageType.TestOutput);
+                string predict_row_str = string.Join("，", predict_values);
+
+                double[] true_row = new double[output_dimension];
+                for (int j = 0; j < output_dimension; j++)
+                {
+                    true_row[j] = outputs[i, j];
+                }
+
+                string true_row_str = string.Join("，", true_row);
+
+                //求均方差
+                for (int j = 0; j < output_dimension; j++)
+                {
+                    MSE[i, j] = (predict_values[j] - true_row[j]) * (predict_values[j] - true_row[j]);
+                }
+                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_row_str}   真实值：{true_row_str}", NNOutputMessageType.TestOutput);
             }
 
-            double mean_square_error = 0;
-            for (int i = 0; i < test_len; i++)
+            double[] mean_square_error = new double[output_dimension];
+            string[] mse_strs = new string[output_dimension];
+            for (int i = 0; i < output_dimension; i++)
             {
-                mean_square_error += MSE[i];
+                for (int j = 0; j < test_len; j++)
+                {
+                    mean_square_error[i] += MSE[j, i];
+                }
+                mean_square_error[i] = mean_square_error[i] / test_len;
+                mse_strs[i] = mean_square_error[i].ToString("0.##########");
             }
 
-            mean_square_error = mean_square_error / test_len;
-
-            output?.Invoke($"均方误差为：{mean_square_error.ToString("0.##########")}", NNOutputMessageType.TestOutput);
+            output?.Invoke($"均方误差为：[{string.Join(", ", mse_strs)}]", NNOutputMessageType.TestOutput);
             output?.Invoke("以上为测试集\n", NNOutputMessageType.TestInfo);
 
             return mean_square_error;
         }
-
-        public double ga_test(double[,] inputs, double[] outputs)
-        {
-            int test_len = inputs.GetLength(0);
-            double[] MSE = new double[test_len];
-            for (int i = 0; i < test_len; i++)
-            {
-                double[] input_row = new double[input_dimension];
-                for (int j = 0; j < input_dimension; j++)
-                {
-                    input_row[j] = inputs[i, j];
-                }
-
-                string input_row_str = string.Join("，", input_row);
-
-                double[] input_row_norm = new double[input_dimension];
-                for (int j = 0; j < input_dimension; j++)
-                {
-                    input_row_norm[j] = normalize_single(input_row[j], inputs_mins[j], inputs_maxs[j]);
-                }
-                double true_value = normalize_single(outputs[i], output_min, output_max);
-                //计算
-                double[] input_values = input_row_norm;
-                for (int j = 0; j < hidden_layers.Count; j++)
-                {
-                    input_values = compute_hidden(input_values, hidden_layers[j]);
-                }
-                double predict_value = compute_output(input_values);
-                //求均方差
-                MSE[i] = (predict_value - true_value) * (predict_value - true_value);
-                //从归一化还原
-                predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
-                true_value = outputs[i];
-
-                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}   真实值：{true_value.ToString(double_format)}", NNOutputMessageType.TestOutput);
-            }
-
-            double mean_square_error = 0;
-            for (int i = 0; i < test_len; i++)
-            {
-                mean_square_error += MSE[i];
-            }
-
-            mean_square_error = mean_square_error / test_len;
-
-            output?.Invoke($"均方误差为：{mean_square_error.ToString("0.##########")}", NNOutputMessageType.TestOutput);
-            output?.Invoke("以上为测试集\n", NNOutputMessageType.TestInfo);
-
-            return mean_square_error;
-        }
-
-        public void train_test(double[,] train_inputs, double[] train_outputs, int train_epoches,
-            double[,] test_inputs, double[] test_outputs)
+        
+        public void train_test(double[,] train_inputs, double[,] train_outputs, int train_epoches,
+            double[,] test_inputs, double[,] test_outputs)
         {
             //
             int train_len = train_inputs.GetLength(0);
             int train_test_len = 10;//train_len / 200;
             double[,] train_test_inputs = new double[train_test_len, input_dimension];
-            double[] train_test_outputs = new double[train_test_len];
+            double[,] train_test_outputs = new double[train_test_len, output_dimension];
             for (int k = 0; k < train_test_len; k++)
             {
                 for (int m = 0; m < input_dimension; m++)
                 {
                     train_test_inputs[k, m] = train_inputs[k, m];
                 }
-                train_test_outputs[k] = train_outputs[k];
+                for (int m = 0; m < output_dimension; m++)
+                {
+                    train_test_outputs[k, m] = train_outputs[k, m];
+                }
             }
 
             //
-            (inputs_mins, inputs_maxs) = normalize_inputs(train_inputs);
+            (inputs_mins, inputs_maxs) = normalize_data(train_inputs);
             for (int i = 0; i < inputs_mins.Length; i++)
             {
                 output?.Invoke($"输入集[{i}]归一化的最大值和最小值分别为：{inputs_maxs[i].ToString(double_format)}，{inputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
             }
-            (output_min, output_max) = normalize_array(train_outputs);
-            
-            output?.Invoke($"输出集归一化的最大值和最小值为：{output_max.ToString(double_format)}，{output_min.ToString(double_format)}\r\n", NNOutputMessageType.TrainInput);
-            
-            output?.Invoke($"迭代次数[{train_epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", NNOutputMessageType.TrainInput);
-            if (use_ga)
+            (outputs_mins, outputs_maxs) = normalize_data(train_outputs);
+            for (int i = 0; i < outputs_mins.Length; i++)
             {
-                //ga算法预优化参数，没什么用，均方误差很难小于0.0001，效果不及bp
-                output?.Invoke("开始使用GA算法预优化参数...", NNOutputMessageType.TrainInfo);
-                ga(test_inputs, test_outputs);
-                output?.Invoke("GA优化完毕", NNOutputMessageType.TrainInfo);
-                //
+                output?.Invoke($"输出集[{i}]归一化的最大值和最小值分别为：{outputs_maxs[i].ToString(double_format)}，{outputs_mins[i].ToString(double_format)}", NNOutputMessageType.TrainInput);
             }
 
-            DisplayParams();
+            output?.Invoke($"迭代次数[{train_epoches}]，隐藏层数量[{hidden_layers.Count}]，输出层数量[1]，每层神经元数量[{numOfNeurons}]，学习率[{learning_rate}]", NNOutputMessageType.TrainInfo);
 
-            
+            DisplayParams();            
 
             for (int j = 0; j < train_epoches; j++)
             {
                 for (int i = 0; i < train_inputs.GetLength(0); i++)
                 {
-                    double[] data = new double[input_dimension];
+                    double[] input_data_row = new double[input_dimension];
                     for (int k = 0; k < input_dimension; k++)
                     {
-                        data[k] = train_inputs[i, k];
+                        input_data_row[k] = train_inputs[i, k];
                     }
-                    bp(data, train_outputs[i]);
+                    double[] output_data_row = new double[output_dimension];
+                    for (int k = 0; k < output_dimension; k++)
+                    {
+                        output_data_row[k] = train_outputs[i, k];
+                    }
+                    bp(input_data_row, output_data_row);
                 }
 
                 if ((j + 1) % 1000 == 0)
@@ -467,7 +476,7 @@ namespace AICore.NeuralNetwork
 
             DisplayParams();
         }
-
+        
         public void predict(double[,] inputs)
         {
             int test_len = inputs.GetLength(0);
@@ -494,13 +503,19 @@ namespace AICore.NeuralNetwork
                 {
                     input_values = compute_hidden(input_values, hidden_layers[j]);
                 }
-                double predict_value = compute_output(input_values);
-                //从归一化还原
-                predict_value = (predict_value * (output_max - output_min + 1)) - 1 + output_min;
 
-                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_value.ToString(double_format)}", NNOutputMessageType.PreditcOutput);
+                double[] predict_values = compute_output_multi(input_values);
+                //从归一化还原
+                for (int j = 0; j < output_dimension; j++)
+                {
+                    predict_values[j] = (predict_values[j] * (outputs_maxs[j] - outputs_mins[j] + 1)) - 1 + outputs_mins[j];
+                }
+
+                string predict_row_str = string.Join("，", predict_values);
+
+                output?.Invoke($"输入值：{input_row_str}，预测值：{predict_row_str}", NNOutputMessageType.PreditcOutput);
             }
-            output?.Invoke($"以上为预测集\n", NNOutputMessageType.PredictInfo);
+            output?.Invoke("以上为预测集", NNOutputMessageType.PredictInfo);
         }
 
         public void Export(string name)
@@ -546,140 +561,6 @@ namespace AICore.NeuralNetwork
         private void initilize_output_layer(int output_dimension)
         {
             output_layer = new NeuralLayer("OL", numOfNeurons, output_dimension);
-        }
-
-        //使用遗传算法优化权重和偏置
-        private void ga(double[,] test_inputs, double[] test_outputs)
-        {
-            double[] values = get_params();
-            double mutation_ratio = 0.3;
-            double max = 50;
-            double min = -50;
-            Chromosome init_chromosome = new Chromosome(values.ToList(), mutation_ratio, max, min);
-            List<Chromosome> chromosomes = new List<Chromosome>();
-            chromosomes.Add(init_chromosome);
-
-            int popSize = 10;
-            float xoverRatio = 0.5f;
-
-            for (int i = 1; i < popSize; i++)
-            {
-                Chromosome copy = init_chromosome.GetCopy();
-                copy.ChromosomeMutate();
-                chromosomes.Add(copy);
-            }
-
-            Population pop = new Population(DateTime.Now.ToString("yyyyMMddHHmmss"),
-                        xoverRatio, popSize, chromosomes, mutation_ratio);
-
-            //int evoloveGens = 10000;
-            List<Chromosome> historyChromosomes = new List<Chromosome>();
-
-            int calc_count = 0;
-            while (true)
-            {
-                pop.Generation++;
-                if (pop.Generation > 1)
-                {
-                    pop.PopulationCrossover();
-                    pop.ChromosomeMutate();
-                }
-
-                foreach (var chromosome in pop.Chromosomes)
-                {
-                    chromosome.Fitness = calc_fitness(chromosome, test_inputs, test_outputs);
-                }
-
-                //Sort chromosome in population
-                pop.ChromosomeSort();
-
-                //update selected ratio of chromosome
-                pop.UpdateChromosomeSelectedRatio();
-
-                //save population to history list
-                foreach (var chrom in pop.Chromosomes)
-                {
-                    historyChromosomes.Add(chrom.GetCopy());
-                }
-                double best_fitness = calc_fitness(pop.Chromosomes.FirstOrDefault(), test_inputs, test_outputs);
-                output?.Invoke($"第[{pop.Generation}]代最佳均方误差：{1 / best_fitness}", NNOutputMessageType.TrainOutput);
-                calc_count++;
-                if ((1 / best_fitness <= 0.0001) || calc_count >= 10000)
-                {
-                    break;
-                }
-            }
-
-            Population best_pop = new Population(DateTime.Now.ToString("yyyyMMddHHmmss"),
-                        xoverRatio, popSize, historyChromosomes, mutation_ratio);
-
-            double fitness = calc_fitness(best_pop.Chromosomes.FirstOrDefault(), test_inputs, test_outputs);
-            output?.Invoke($"共迭代运算[{pop.Generation}]次，最终最佳均方误差：{1 / fitness}", NNOutputMessageType.TrainOutput);
-
-        }
-
-        private double[] get_params()
-        {
-            List<double> values = new List<double>();
-
-            for (int i = 0; i < hidden_layers.Count; i++)
-            {
-                for (int j = 0; j < hidden_layers[i].Neurons.Count; j++)
-                {
-                    for (int k = 0; k < hidden_layers[i].Neurons[j].Weights.Length; k++)
-                    {
-                        values.Add(hidden_layers[i].Neurons[j].Weights[k]);
-                    }
-                    values.Add(hidden_layers[i].Neurons[j].Bias);
-                }
-            }
-
-            for (int j = 0; j < output_layer.Neurons.Count; j++)
-            {
-                for (int k = 0; k < output_layer.Neurons[j].Weights.Length; k++)
-                {
-                    values.Add(output_layer.Neurons[j].Weights[k]);
-                }
-                values.Add(output_layer.Neurons[j].Bias);
-            }
-
-            return values.ToArray();
-        }
-
-        private void set_params(double[] values)
-        {
-            int index = 0;
-
-            for (int i = 0; i < hidden_layers.Count; i++)
-            {
-                for (int j = 0; j < hidden_layers[i].Neurons.Count; j++)
-                {
-                    for (int k = 0; k < hidden_layers[i].Neurons[j].Weights.Length; k++)
-                    {
-                        hidden_layers[i].Neurons[j].Weights[k] = values[index++];
-                    }
-                    hidden_layers[i].Neurons[j].Bias = values[index++];
-                }
-            }
-
-            for (int j = 0; j < output_layer.Neurons.Count; j++)
-            {
-                for (int k = 0; k < output_layer.Neurons[j].Weights.Length; k++)
-                {
-                    output_layer.Neurons[j].Weights[k] = values[index++];
-                }
-                output_layer.Neurons[j].Bias = values[index++];
-            }
-
-        }
-
-        private double calc_fitness(Chromosome chromosome, double[,] test_inputs, double[] test_outputs)
-        {
-            set_params(chromosome.Values.ToArray());
-
-            double mse = ga_test(test_inputs, test_outputs);
-
-            return 1 / mse;
         }
     }
 
