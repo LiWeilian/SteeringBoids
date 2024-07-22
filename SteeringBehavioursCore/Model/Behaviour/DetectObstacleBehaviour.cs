@@ -54,9 +54,11 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 float? dist_nearest = null;
                 float? dist_temp = null;
 
+                double ext_ratio = 1200;
+
                 //正前方
-                float x_f = (float)(x - Math.Sin(angle / 180 * Math.PI) * 600);
-                float y_f = (float)(y + Math.Cos(angle / 180 * Math.PI) * 600);
+                float x_f = (float)(x - Math.Sin(angle / 180 * Math.PI) * ext_ratio);
+                float y_f = (float)(y + Math.Cos(angle / 180 * Math.PI) * ext_ratio);
 
                 List<Position> i_s = of_field.ObstacleIntersections(x, y, x_f, y_f);
                 od_boid.FrontIntersections = new List<Position>();
@@ -77,8 +79,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //左前方
-                float x_fl = (float)(x - Math.Sin((angle - 45) / 180 * Math.PI) * 600);
-                float y_fl = (float)(y + Math.Cos((angle - 45) / 180 * Math.PI) * 600);
+                float x_fl = (float)(x - Math.Sin((angle - 45) / 180 * Math.PI) * ext_ratio);
+                float y_fl = (float)(y + Math.Cos((angle - 45) / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_fl, y_fl);
                 od_boid.FrontLeftIntersections = new List<Position>();
@@ -99,8 +101,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //左方
-                float x_l = (float)(x + Math.Cos(angle / 180 * Math.PI) * 600);
-                float y_l = (float)(y + Math.Sin(angle / 180 * Math.PI) * 600);
+                float x_l = (float)(x + Math.Cos(angle / 180 * Math.PI) * ext_ratio);
+                float y_l = (float)(y + Math.Sin(angle / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_l, y_l);
                 od_boid.LeftIntersections = new List<Position>();
@@ -121,8 +123,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //右前方
-                float x_fr = (float)(x - Math.Sin((angle + 45) / 180 * Math.PI) * 600);
-                float y_fr = (float)(y + Math.Cos((angle + 45) / 180 * Math.PI) * 600);
+                float x_fr = (float)(x - Math.Sin((angle + 45) / 180 * Math.PI) * ext_ratio);
+                float y_fr = (float)(y + Math.Cos((angle + 45) / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_fr, y_fr);
                 od_boid.FrontRightIntersections = new List<Position>();
@@ -143,8 +145,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //右方
-                float x_r = (float)(x - Math.Cos(angle / 180 * Math.PI) * 600);
-                float y_r = (float)(y - Math.Sin(angle / 180 * Math.PI) * 600);
+                float x_r = (float)(x - Math.Cos(angle / 180 * Math.PI) * ext_ratio);
+                float y_r = (float)(y - Math.Sin(angle / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_r, y_r);
                 od_boid.RightIntersections = new List<Position>();
@@ -165,8 +167,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //正后方
-                float x_rear = (float)(x - Math.Sin((angle + 180) / 180 * Math.PI) * 600);
-                float y_rear = (float)(y + Math.Cos((angle + 180) / 180 * Math.PI) * 600);
+                float x_rear = (float)(x - Math.Sin((angle + 180) / 180 * Math.PI) * ext_ratio);
+                float y_rear = (float)(y + Math.Cos((angle + 180) / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_rear, y_rear);
                 od_boid.RearIntersections = new List<Position>();
@@ -187,8 +189,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //左后方
-                float x_rl = (float)(x - Math.Sin((angle - 135) / 180 * Math.PI) * 600);
-                float y_rl = (float)(y + Math.Cos((angle - 135) / 180 * Math.PI) * 600);
+                float x_rl = (float)(x - Math.Sin((angle - 135) / 180 * Math.PI) * ext_ratio);
+                float y_rl = (float)(y + Math.Cos((angle - 135) / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_rl, y_rl);
                 od_boid.RearLeftIntersections = new List<Position>();
@@ -209,8 +211,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 //右前方
-                float x_rr = (float)(x - Math.Sin((angle + 135) / 180 * Math.PI) * 600);
-                float y_rr = (float)(y + Math.Cos((angle + 135) / 180 * Math.PI) * 600);
+                float x_rr = (float)(x - Math.Sin((angle + 135) / 180 * Math.PI) * ext_ratio);
+                float y_rr = (float)(y + Math.Cos((angle + 135) / 180 * Math.PI) * ext_ratio);
 
                 i_s = of_field.ObstacleIntersections(x, y, x_rr, y_rr);
                 od_boid.RearRightIntersections = new List<Position>();

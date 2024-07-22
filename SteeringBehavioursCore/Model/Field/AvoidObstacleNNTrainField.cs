@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using SteeringBehavioursCore.Model;
 using SteeringBehavioursCore.Model.Behaviour;
 using SteeringBehavioursCore.Model.Boid;
 using SteeringBehavioursCore.Model.Interaction;
 
 namespace SteeringBehavioursCore.Model.Field
 {
-    public class AvoidObstacleAIField : BaseField, IObstacleField, ISurviveField
+    public class AvoidObstacleNNTrainField : BaseField, IObstacleField
     {
         public List<Obstacle> Obstacles { get; }
 
         private const int _boidsCount = 3;
         private const int _obstacleCount = 3;
-        public AvoidObstacleAIField()
+
+        public AvoidObstacleNNTrainField()
         {
             _width = Width;
             _height = Height;
@@ -35,42 +34,12 @@ namespace SteeringBehavioursCore.Model.Field
 
         private void GenerateObstacles()
         {
-            Random rnd = new Random((int)DateTime.Now.Ticks);
-            for (int i = 0; i < _obstacleCount; i++)
-            {
-                float minX;
-                float minY;
-                float maxX;
-                float maxY;
-                while (true)
-                {
-                    Thread.Sleep(10);
-
-                    minX = (float)(100 + 800 * rnd.NextDouble());
-                    minY = (float)(100 + 200 * rnd.NextDouble());
-
-                    float width = (float)(50 + 100 * rnd.NextDouble());
-                    float height = (float)(50 + 100 * rnd.NextDouble());
-
-                    maxX = minX + width;
-                    maxY = minY + height;
-
-                    bool detected = false;
-                    foreach (Obstacle obstacle in Obstacles)
-                    {
-                        detected = obstacle.RectangleDetected(minX, minY, maxX, maxY);
-                        if (detected)
-                        {
-                            break;
-                        }
-                    }
-                    if (!detected)
-                    {
-                        break;
-                    }
-                }
-                Obstacles.Add(new Obstacle(minX, minY, maxX, maxY));
-            }
+            Obstacles.Add(new Obstacle(200, 150, 300, 250));
+            Obstacles.Add(new Obstacle(400, 100, 525, 250));
+            Obstacles.Add(new Obstacle(650, 135, 950, 350));
+            Obstacles.Add(new Obstacle(450, 300, 550, 400));
+            Obstacles.Add(new Obstacle(300, 375, 400, 500));
+            Obstacles.Add(new Obstacle(750, 400, 850, 500));
         }
 
         private void GenerateRandomBoids()
@@ -89,7 +58,7 @@ namespace SteeringBehavioursCore.Model.Field
             for (var i = 0; i < Boids.GetLength(0); i++)
             {
                 float speed = (float)(1 + rnd.NextDouble());
-                Boids[i] = new AvoidObstacleAIBoid(
+                Boids[i] = new AvoidObstacleNNTrainBoid(
                     (float)rnd.NextDouble() * _width,
                     (float)rnd.NextDouble() * _height,
                     (float)(rnd.NextDouble() - .5),
@@ -100,11 +69,6 @@ namespace SteeringBehavioursCore.Model.Field
                 behaviours.ForEach(
                     behaviour => Boids[i].AddBehaviour(behaviour));
             }
-        }
-
-        public float CalcSurviveFactor(float x, float y)
-        {
-            return 1f;
         }
         /*
         public (float?, float?) NearestObstacleIntersection(float x1, float y1, float x2, float y2)
@@ -129,7 +93,8 @@ namespace SteeringBehavioursCore.Model.Field
                             nx = xs[i];
                             ny = ys[i];
                             dist = (float)Math.Sqrt(Math.Pow((nx - x1).Value, 2) + Math.Pow((ny - y1).Value, 2));
-                        } else
+                        }
+                        else
                         {
                             float? x = xs[i];
                             float? y = ys[i];
@@ -174,5 +139,5 @@ namespace SteeringBehavioursCore.Model.Field
 
             return intersections;
         }
-    }    
+    }
 }

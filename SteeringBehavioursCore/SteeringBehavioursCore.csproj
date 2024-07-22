@@ -91,6 +91,7 @@
     <Compile Include="Controller\ArriveController.cs" />
     <Compile Include="Controller\AvoidObstacleAIController.cs" />
     <Compile Include="Controller\AvoidObstacleController.cs" />
+    <Compile Include="Controller\AvoidObstacleNNTrainController.cs" />
     <Compile Include="Controller\FlockingBoidsController.cs" />
     <Compile Include="Controller\HiddenController.cs" />
     <Compile Include="Controller\PathFollowingController.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Model\Behaviour\PredatorBehaviour.cs" />
     <Compile Include="Model\Behaviour\WanderBehaviour.cs" />
     <Compile Include="Model\Boid\AvoidObstacleAIBoid.cs" />
+    <Compile Include="Model\Boid\AvoidObstacleNNTrainBoid.cs" />
     <Compile Include="Model\Boid\EnemyBoid.cs" />
     <Compile Include="Model\Boid\HerbivoreBoid.cs" />
     <Compile Include="Model\Boid\IBoid.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="Model\Boid\NormalBoid.cs" />
     <Compile Include="Model\Field\AvoidObstacleAIField.cs" />
     <Compile Include="Model\Field\AvoidObstacleField.cs" />
+    <Compile Include="Model\Field\AvoidObstacleNNTrainField.cs" />
     <Compile Include="Model\Field\BaseField.cs" />
     <Compile Include="Model\Field\HiddenField.cs" />
     <Compile Include="Model\Field\IObstacleField.cs" />
@@ -151,6 +154,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer\ArriveRenderer.cs" />
     <Compile Include="Renderer\AvoidObstacleAIRenderer.cs" />
+    <Compile Include="Renderer\AvoidObstacleNNTrainRenderer.cs" />
     <Compile Include="Renderer\AvoidObstacleRenderer.cs" />
     <Compile Include="Renderer\BaseRenderer.cs" />
     <Compile Include="Renderer\FlockingBoidRenderer.cs" />
