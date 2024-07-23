@@ -103,6 +103,7 @@
     <Compile Include="Model\Behaviour\DetectObstacleBehaviour.cs" />
     <Compile Include="Model\Behaviour\FollowPathBehaviour.cs" />
     <Compile Include="Model\Behaviour\HiddenBehaviour.cs" />
+    <Compile Include="Model\Behaviour\AvoidObstacleNNTrainBehaviour.cs" />
     <Compile Include="Model\Behaviour\PredatorBehaviour.cs" />
     <Compile Include="Model\Behaviour\WanderBehaviour.cs" />
     <Compile Include="Model\Boid\AvoidObstacleAIBoid.cs" />

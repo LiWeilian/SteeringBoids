@@ -20,7 +20,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
             _field = field as PathFollowingField;
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             if (boidPositions == null)
             {

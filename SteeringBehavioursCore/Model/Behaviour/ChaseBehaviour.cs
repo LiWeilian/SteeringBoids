@@ -17,7 +17,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
         {
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             if (curBoid is IPredator)
             {

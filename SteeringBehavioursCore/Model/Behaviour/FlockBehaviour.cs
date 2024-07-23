@@ -12,7 +12,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
         {
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             var vision = curBoid is IEnemy ? 2 * Vision : Vision;
             var neighborCount = 0;

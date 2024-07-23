@@ -32,7 +32,7 @@ namespace SteeringBehavioursCore.Model.Boid
 
         public virtual void Move(float stepSize)
         {
-            _behaviours.ForEach(behaviour => behaviour.CalcVelocity(this));
+            _behaviours.ForEach(behaviour => behaviour.Action(this));
             //fixed speed
             float currentSpeed = Velocity.GetCurrentSpeed();
             if (currentSpeed > Speed)

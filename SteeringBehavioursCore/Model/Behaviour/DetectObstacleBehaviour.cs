@@ -38,7 +38,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
             return np;
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             //更新与障碍物的交点
             if (Field is IObstacleField 

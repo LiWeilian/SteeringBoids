@@ -11,7 +11,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
         {
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             foreach (var boid in Boids)
                 if ((boid is IEnemy) &&

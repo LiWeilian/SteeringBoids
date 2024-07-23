@@ -129,5 +129,10 @@ namespace SteeringBehavioursCore.Model.Field
         {
             throw new NotImplementedException();
         }
+
+        public bool PointIntersects(float x, float y)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

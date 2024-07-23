@@ -20,7 +20,7 @@ namespace SteeringBehavioursCore.Model.Behaviour
             _height = height;
         }
 
-        public override void CalcVelocity(IBoid curBoid)
+        public override void Action(IBoid curBoid)
         {
             var resultVelocity = new Velocity();
 

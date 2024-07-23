@@ -139,5 +139,24 @@ namespace SteeringBehavioursCore.Model.Field
 
             return intersections;
         }
+
+        public bool PointIntersects(float x, float y)
+        {
+            List<Obstacle> obstacles_temp = new List<Obstacle>();
+            obstacles_temp.AddRange(Obstacles);
+            obstacles_temp.Add(new Obstacle(0, 50, 50, 550));
+            obstacles_temp.Add(new Obstacle(50, 0, 1150, 50));
+            obstacles_temp.Add(new Obstacle(1150, 50, 1200, 550));
+            obstacles_temp.Add(new Obstacle(50, 550, 1150, 600));
+            foreach (var obstacle in obstacles_temp)
+            {
+                if (obstacle.PointDetected(x, y))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }

@@ -15,6 +15,6 @@ namespace SteeringBehavioursCore.Model.Behaviour
             Field = field;
         }
 
-        public abstract void CalcVelocity(IBoid curBoid);
+        public abstract void Action(IBoid curBoid);
     }
 }
