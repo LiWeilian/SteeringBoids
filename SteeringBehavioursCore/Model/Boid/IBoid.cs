@@ -9,6 +9,7 @@ namespace SteeringBehavioursCore.Model.Boid
 {
     public interface IBoid
     {
+        string Id { get; }
         float Size { get; set; }
         Position Position { get; set; }
         List<Position> Positions { get; set; }

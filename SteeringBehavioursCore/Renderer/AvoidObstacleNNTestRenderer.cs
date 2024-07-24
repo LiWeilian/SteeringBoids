@@ -9,9 +9,9 @@ using SteeringBehavioursCore.Model.Field;
 
 namespace SteeringBehavioursCore.Renderer
 {
-    public class AvoidObstacleNNTrainRenderer : RendererSkiaSharp
+    public class AvoidObstacleNNTestRenderer : RendererSkiaSharp
     {
-        public AvoidObstacleNNTrainRenderer(SKCanvas canvas) : base(canvas)
+        public AvoidObstacleNNTestRenderer(SKCanvas canvas) : base(canvas)
         {
         }
         public override void Render(IField field)
@@ -20,21 +20,21 @@ namespace SteeringBehavioursCore.Renderer
 
             DrawField();
             DrawWall();
-            this.DrawObstacles(field as AvoidObstacleNNTrainField);
+            this.DrawObstacles(field as AvoidObstacleNNTestField);
             this.DrawFieldOverview(field);
             foreach (var boid in field.Boids)
             {
-                if (boid is AvoidObstacleNNTrainBoid
-                    && (boid as AvoidObstacleNNTrainBoid).Life > 0f)
+                if (boid is AvoidObstacleNNTestBoid
+                    && (boid as AvoidObstacleNNTestBoid).Life > 0f)
                 {
-                    DrawDetectedLine(boid as AvoidObstacleNNTrainBoid);
+                    DrawDetectedLine(boid as AvoidObstacleNNTestBoid);
                     DrawDetectedObstacles(boid as IObstacleDetector);
                     DrawTailBoid(boid, _boidColor, field.BoidDisplayBySpeed);
                 }
             }
         }
 
-        private void DrawObstacles(AvoidObstacleNNTrainField field)
+        private void DrawObstacles(AvoidObstacleNNTestField field)
         {
             float lineWidth = 2f;
             Color color = new Color(247, 175, 49);
@@ -67,7 +67,7 @@ namespace SteeringBehavioursCore.Renderer
                 i++;
             }
         }
-        private void DrawDetectedLine(AvoidObstacleNNTrainBoid boid)
+        private void DrawDetectedLine(AvoidObstacleNNTestBoid boid)
         {
             float lineWidth = 1f;
             Color color = new Color(128, 128, 128);

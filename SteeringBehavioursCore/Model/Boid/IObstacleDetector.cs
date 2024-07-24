@@ -26,6 +26,9 @@ namespace SteeringBehavioursCore.Model.Boid
         List<Position> RearLeftIntersections { get; set; }
         List<Position> RearRightIntersections { get; set; }
         float? ObstacleDistance { get; set; }
+
+        ObstacleDetectorRecorder DetectorRecorder { get; }
+        bool UpdateDetectorRecorder();
     }
 
 }

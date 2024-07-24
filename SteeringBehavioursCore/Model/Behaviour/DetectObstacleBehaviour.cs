@@ -233,6 +233,8 @@ namespace SteeringBehavioursCore.Model.Behaviour
                 }
 
                 od_boid.ObstacleDistance = dist_nearest;
+
+                od_boid.UpdateDetectorRecorder();
             }
         }
     }

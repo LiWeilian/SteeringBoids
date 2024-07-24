@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Timers;
 
 namespace SteeringBehavioursCore.Model.Boid
 {
-    internal class AvoidObstacleNNTrainBoid : NormalBoid, ISurvive, ILife, IObstacleDetector, IFood
+    internal class AvoidObstacleNNTestBoid : NormalBoid, ISurvive, ILife, IObstacleDetector, IFood
     {
         private System.Timers.Timer _timer;
         public float SurviveFactor { get; set; }
@@ -16,6 +15,7 @@ namespace SteeringBehavioursCore.Model.Boid
         public float Quantity { get; set; }
 
         public DateTime BornTime { get; private set; }
+        public DateTime? VelocityUpdateTime { get; set; }
 
         #region 与障碍物交点
         public Position FrontObstacle { get; set; }
@@ -73,22 +73,18 @@ namespace SteeringBehavioursCore.Model.Boid
         public ObstacleDetectorRecorder DetectorRecorder { get; private set; }
         public bool UpdateDetectorRecorder()
         {
-            if (DetectorRecorder == null)
-            {
-                DetectorRecorder = new ObstacleDetectorRecorder();
-                DetectorRecorder.FrontDist = CalcDistance(FrontObstacle);
-                DetectorRecorder.FrontLeftDist = CalcDistance(FrontLeftObstacle);
-                DetectorRecorder.FrontRightDist = CalcDistance(FrontRightObstacle);
-                DetectorRecorder.LeftDist = CalcDistance(LeftObstacle);
-                DetectorRecorder.RightDist = CalcDistance(RightObstacle);
-                DetectorRecorder.RearLeftDist = CalcDistance(RearLeftObstacle);
-                DetectorRecorder.RearRightDist = CalcDistance(RearRightObstacle);
-                DetectorRecorder.RearDist = CalcDistance(RearObstacle);
-                DetectorRecorder.Velocity = new Velocity(this.Velocity.X, this.Velocity.Y);
+            DetectorRecorder = new ObstacleDetectorRecorder();
+            DetectorRecorder.FrontDist = CalcDistance(FrontObstacle);
+            DetectorRecorder.FrontLeftDist = CalcDistance(FrontLeftObstacle);
+            DetectorRecorder.FrontRightDist = CalcDistance(FrontRightObstacle);
+            DetectorRecorder.LeftDist = CalcDistance(LeftObstacle);
+            DetectorRecorder.RightDist = CalcDistance(RightObstacle);
+            DetectorRecorder.RearLeftDist = CalcDistance(RearLeftObstacle);
+            DetectorRecorder.RearRightDist = CalcDistance(RearRightObstacle);
+            DetectorRecorder.RearDist = CalcDistance(RearObstacle);
+            DetectorRecorder.Velocity = new Velocity(this.Velocity.X, this.Velocity.Y);
 
-                return true;
-            }
-            return false;
+            return true;
         }
         private float CalcDistance(Position pos)
         {
@@ -96,7 +92,7 @@ namespace SteeringBehavioursCore.Model.Boid
         }
         #endregion
 
-        public AvoidObstacleNNTrainBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
+        public AvoidObstacleNNTestBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
         {
             SurviveFactor = 0f;
             BornTime = DateTime.Now;
@@ -151,18 +147,5 @@ namespace SteeringBehavioursCore.Model.Boid
 
             return a - Life;
         }
-    }
-
-    internal class ObstacleDetectorRecorder
-    {
-        public float FrontDist { get; set; }
-        public float FrontLeftDist { get; set; }
-        public float FrontRightDist { get; set; }
-        public float LeftDist { get; set; }
-        public float RightDist { get; set; }
-        public float RearLeftDist { get; set; }
-        public float RearRightDist { get; set; }
-        public float RearDist { get; set; }
-        public Velocity Velocity { get; set; }
     }
 }

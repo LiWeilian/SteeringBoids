@@ -3,43 +3,79 @@
   "WorkspaceRootPath": "C:\\work_lab\\GitHub\\SteeringBoids\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidobstaclenntestbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidobstaclenntestbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\avoidobstaclenntestboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\avoidobstaclenntestboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\avoidobstaclenntrainbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\avoidobstaclenntrainbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\avoidobstaclenntrainfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\avoidobstaclenntrainfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\avoidobstaclenntrainfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\avoidobstaclenntestfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\avoidobstaclenntestfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\avoidobstaclenntrainboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\avoidobstaclenntrainboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\avoidobstacleaifield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\avoidobstacleaifield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{160E8E49-1C3F-4A5A-8BBA-0225D315312F}|AvoidObstacleBoidsNNTest\\AvoidObstacleBoidsNNTest.csproj|c:\\work_lab\\github\\steeringboids\\avoidobstacleboidsnntest\\formavoidobstacleboidsnntest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160E8E49-1C3F-4A5A-8BBA-0225D315312F}|AvoidObstacleBoidsNNTest\\AvoidObstacleBoidsNNTest.csproj|solutionrelative:avoidobstacleboidsnntest\\formavoidobstacleboidsnntest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\avoidobstaclefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\avoidobstaclefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1058FF8A-73FF-41FD-8066-7C4BCFEEB79F}|AvoidObstacleBoidsNNTrain\\AvoidObstacleBoidsNNTrain.csproj|c:\\work_lab\\github\\steeringboids\\avoidobstacleboidsnntrain\\formavoidobstacleboidsnntrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1058FF8A-73FF-41FD-8066-7C4BCFEEB79F}|AvoidObstacleBoidsNNTrain\\AvoidObstacleBoidsNNTrain.csproj|solutionrelative:avoidobstacleboidsnntrain\\formavoidobstacleboidsnntrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\iobstaclefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\iobstaclefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\avoidobstaclenntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\avoidobstaclenntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\detectobstaclebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\avoidobstaclenntrainrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclenntrainrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\avoidobstaclenntraincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\avoidobstaclenntraincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_lab\\github\\steeringboids\\aicore\\neuralnetwork\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\neuralnetwork\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_lab\\github\\steeringboids\\aicore\\neuralnetwork\\neurallayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\neuralnetwork\\neurallayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|c:\\work_lab\\github\\steeringboids\\aicore\\neuralnetwork\\neuralnetworkparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187AB095-997F-4382-9D63-8631DF827972}|AICore\\AICore.csproj|solutionrelative:aicore\\neuralnetwork\\neuralnetworkparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\detectobstaclebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\detectobstaclebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\iobstacledetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\iobstacledetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\boid\\avoidobstacleaiboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\boid\\avoidobstacleaiboid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\behaviour\\behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\behaviour\\behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\behaviour\\behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,34 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 995,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AvoidObstacleField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleField.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:25:14.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AvoidObstacleAIField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleAIField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleAIField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleAIField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleAIField.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:25:07.408Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -120,26 +130,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AvoidObstacleNNTrainBehaviour.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:52:39.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AvoidObstacleNNTrainField.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTrainField.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTrainField.cs",
               "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTrainField.cs",
               "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTrainField.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAowJ8AAAAJAAAA",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAowJUAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T07:32:35.777Z",
               "EditorCaption": ""
@@ -147,71 +144,227 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AvoidObstacleNNTrainBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AvoidObstacleNNTrainBehaviour.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTrainBehaviour.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwEUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:02:54.444Z",
+              "WhenOpened": "2024-07-23T09:52:39.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IObstacleField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\IObstacleField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\IObstacleField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\IObstacleField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\IObstacleField.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "DocumentIndex": 4,
+              "Title": "AvoidObstacleNNTestField.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTestField.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTestField.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTestField.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\AvoidObstacleNNTestField.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:22:04.74Z",
+              "WhenOpened": "2024-07-24T06:52:36.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Obstacle.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\Obstacle.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\Obstacle.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\Obstacle.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\Obstacle.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAswAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AvoidObstacleNNTestBehaviour.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTestBehaviour.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTestBehaviour.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTestBehaviour.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\AvoidObstacleNNTestBehaviour.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:22:23.794Z",
+              "WhenOpened": "2024-07-24T06:53:47.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AvoidObstacleNNTestBoid.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTestBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTestBoid.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTestBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTestBoid.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:16:41.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "FormAvoidObstacleBoidsNNTrain.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\AvoidObstacleBoidsNNTrain\\FormAvoidObstacleBoidsNNTrain.cs",
+              "RelativeDocumentMoniker": "AvoidObstacleBoidsNNTrain\\FormAvoidObstacleBoidsNNTrain.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\AvoidObstacleBoidsNNTrain\\FormAvoidObstacleBoidsNNTrain.cs",
+              "RelativeToolTip": "AvoidObstacleBoidsNNTrain\\FormAvoidObstacleBoidsNNTrain.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:21:40.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormAvoidObstacleBoidsNNTest.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\AvoidObstacleBoidsNNTest\\FormAvoidObstacleBoidsNNTest.cs",
+              "RelativeDocumentMoniker": "AvoidObstacleBoidsNNTest\\FormAvoidObstacleBoidsNNTest.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\AvoidObstacleBoidsNNTest\\FormAvoidObstacleBoidsNNTest.cs",
+              "RelativeToolTip": "AvoidObstacleBoidsNNTest\\FormAvoidObstacleBoidsNNTest.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:58:26.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AvoidObstacleNNTrainBoid.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleNNTrainBoid.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:13:27.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AvoidObstacleNNTestRenderer.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:23:19.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AvoidObstacleNNTestController.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\AvoidObstacleNNTestController.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\AvoidObstacleNNTestController.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\AvoidObstacleNNTestController.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\AvoidObstacleNNTestController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:22:14.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AvoidObstacleNNTrainRenderer.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTrainRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTrainRenderer.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTrainRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTrainRenderer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowKoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T02:50:01.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AvoidObstacleNNTrainController.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\AvoidObstacleNNTrainController.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\AvoidObstacleNNTrainController.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\AvoidObstacleNNTrainController.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\AvoidObstacleNNTrainController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:22:16.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NeuralNetwork.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralNetwork.cs",
+              "RelativeDocumentMoniker": "AICore\\NeuralNetwork\\NeuralNetwork.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralNetwork.cs",
+              "RelativeToolTip": "AICore\\NeuralNetwork\\NeuralNetwork.cs",
+              "ViewState": "AQIAAOEBAAAAAAAAAAAowAACAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:46:46.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NeuralLayer.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "RelativeDocumentMoniker": "AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "RelativeToolTip": "AICore\\NeuralNetwork\\NeuralLayer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:50:40.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NeuralNetworkParams.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralNetworkParams.cs",
+              "RelativeDocumentMoniker": "AICore\\NeuralNetwork\\NeuralNetworkParams.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\AICore\\NeuralNetwork\\NeuralNetworkParams.cs",
+              "RelativeToolTip": "AICore\\NeuralNetwork\\NeuralNetworkParams.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:46:14.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IObstacleDetector.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IObstacleDetector.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\IObstacleDetector.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\IObstacleDetector.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\IObstacleDetector.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T03:26:49.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AvoidObstacleAIBoid.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAowIIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T03:28:10.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "DetectObstacleBehaviour.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\DetectObstacleBehaviour.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\DetectObstacleBehaviour.cs",
               "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\DetectObstacleBehaviour.cs",
               "RelativeToolTip": "SteeringBehavioursCore\\Model\\Behaviour\\DetectObstacleBehaviour.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAABCAAAA",
+              "ViewState": "AQIAANEAAAAAAAAAAAAowOwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T09:52:45.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AvoidObstacleAIBoid.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Boid\\AvoidObstacleAIBoid.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:02:59.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Behaviour.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Behaviour\\Behaviour.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Behaviour\\Behaviour.cs",

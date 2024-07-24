@@ -18,6 +18,8 @@ AvoidObstacleBoidsAI/bin/
 AvoidObstacleBoidsAI/obj/
 AvoidObstacleBoidsNNTrain/bin/
 AvoidObstacleBoidsNNTrain/obj/
+AvoidObstacleBoidsNNTest/bin/
+AvoidObstacleBoidsNNTest/obj/
 HiddenBoids/bin/
 HiddenBoids/obj/
 KeySteeringBoids/bin/

@@ -11,6 +11,7 @@ namespace SteeringBehavioursCore.Model.Boid
         private const int PositionsToRemember = 25;
         private readonly List<Behaviour.Behaviour> _behaviours;
 
+        public string Id { get; private set; }
         public float Size { get; set; }
         public Position Position { get; set; }
         public List<Position> Positions { get; set; } = new List<Position>();
@@ -21,6 +22,7 @@ namespace SteeringBehavioursCore.Model.Boid
 
         public TrainBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1f)
         {
+            Id = Guid.NewGuid().ToString();
             Position = new Position(x, y);
             Velocity = new Velocity(xVel, yVel);
             Size = 6.0f;

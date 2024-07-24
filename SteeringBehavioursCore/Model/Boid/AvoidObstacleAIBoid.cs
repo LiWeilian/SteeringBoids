@@ -11,6 +11,7 @@ namespace SteeringBehavioursCore.Model.Boid
     {
         private System.Timers.Timer _timer;
         public float SurviveFactor { get; set; }
+        public DateTime BornTime { get; private set; }
         public float Life { get; private set; }
 
         #region 与障碍物交点
@@ -60,12 +61,16 @@ namespace SteeringBehavioursCore.Model.Boid
                 }
             }
         }
+
+        public ObstacleDetectorRecorder DetectorRecorder => throw new NotImplementedException();
+
         private float? _obstacle_dist;
         #endregion
 
         public AvoidObstacleAIBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1F) : base(x, y, xVel, yVel, speed, minSpeed)
         {
             SurviveFactor = 0f;
+            BornTime = DateTime.Now;
             Life = 1f;
             start_life_timer();
         }
@@ -119,6 +124,11 @@ namespace SteeringBehavioursCore.Model.Boid
             Positions.Add(new Position(Position));
             while (Positions.Count > PositionsToRemember)
                 Positions.RemoveAt(0);
+        }
+
+        public bool UpdateDetectorRecorder()
+        {
+            return false;
         }
     }
 }

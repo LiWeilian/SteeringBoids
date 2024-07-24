@@ -9,14 +9,14 @@ using SteeringBehavioursCore.Model.Interaction;
 
 namespace SteeringBehavioursCore.Model.Field
 {
-    public class AvoidObstacleNNTrainField : BaseField, IObstacleField
+    internal class AvoidObstacleNNTestField : BaseField, IObstacleField
     {
         public List<Obstacle> Obstacles { get; }
 
-        private const int _boidsCount = 100;
+        private const int _boidsCount = 3;
         private const int _obstacleCount = 3;
 
-        public AvoidObstacleNNTrainField()
+        public AvoidObstacleNNTestField()
         {
             _width = Width;
             _height = Height;
@@ -47,10 +47,10 @@ namespace SteeringBehavioursCore.Model.Field
             var behaviours = new List<Behaviour.Behaviour>
             {
                 new DetectObstacleBehaviour(this),
-                new AvoidObstacleNNTrainBehaviour(this)
-                //new FlockBehaviour(this),
-                //new AlignBehaviour(this),
-                //new AvoidBoidsBehaviour(this),
+                new AvoidObstacleNNTestBehaviour(this),
+                new FlockBehaviour(this),
+                new AlignBehaviour(this),
+                new AvoidBoidsBehaviour(this),
                 //new AvoidObstacleBehaviour(this),
                 //new AvoidWallsBehaviour(this, _width, _height)
             };
@@ -59,7 +59,7 @@ namespace SteeringBehavioursCore.Model.Field
             for (var i = 0; i < Boids.GetLength(0); i++)
             {
                 float speed = (float)(1 + rnd.NextDouble());
-                Boids[i] = new AvoidObstacleNNTrainBoid(
+                Boids[i] = new AvoidObstacleNNTestBoid(
                     (float)rnd.NextDouble() * _width,
                     (float)rnd.NextDouble() * _height,
                     (float)(rnd.NextDouble() - .5),

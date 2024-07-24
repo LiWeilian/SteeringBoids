@@ -9,7 +9,7 @@ namespace AICore.NeuralNetwork
     /// <summary>
     /// 支持多个输出
     /// </summary>
-    internal class NeuralNetwork
+    public class NeuralNetwork
     {
         private List<NeuralLayer> hidden_layers;
         //多个隐藏层
@@ -476,10 +476,11 @@ namespace AICore.NeuralNetwork
 
             DisplayParams();
         }
-        
-        public void predict(double[,] inputs)
+
+        public double[,] predict(double[,] inputs)
         {
             int test_len = inputs.GetLength(0);
+            double[,] outputs = new double[test_len, output_dimension];
             double[] MSE = new double[test_len];
             for (int i = 0; i < test_len; i++)
             {
@@ -509,6 +510,7 @@ namespace AICore.NeuralNetwork
                 for (int j = 0; j < output_dimension; j++)
                 {
                     predict_values[j] = (predict_values[j] * (outputs_maxs[j] - outputs_mins[j] + 1)) - 1 + outputs_mins[j];
+                    outputs[i, j] = predict_values[j];
                 }
 
                 string predict_row_str = string.Join("，", predict_values);
@@ -516,6 +518,7 @@ namespace AICore.NeuralNetwork
                 output?.Invoke($"输入值：{input_row_str}，预测值：{predict_row_str}", NNOutputMessageType.PreditcOutput);
             }
             output?.Invoke("以上为预测集", NNOutputMessageType.PredictInfo);
+            return outputs;
         }
 
         public void Export(string name)
@@ -562,6 +565,51 @@ namespace AICore.NeuralNetwork
         {
             output_layer = new NeuralLayer("OL", numOfNeurons, output_dimension);
         }
+
+        #region 导入导出模型参数
+        public NeuralNetwork(string file)
+        {
+            LoadParams(file);
+        }
+        public void ExportParams(string file)
+        {
+            NeuralNetworkParams nnp = new NeuralNetworkParams()
+            {
+                hidden_layers = this.hidden_layers,
+                output_layer = this.output_layer,
+                numOfNeurons = this.numOfNeurons,
+                learning_rate = this.learning_rate,
+                use_ga = this.use_ga,
+                inputs_mins = this.inputs_mins,
+                inputs_maxs = this.inputs_maxs,
+                outputs_mins = this.outputs_mins,
+                outputs_maxs = this.outputs_maxs,
+                input_dimension = this.input_dimension,
+                output_dimension = this.output_dimension,
+                double_format = this.double_format
+            };
+            nnp.Save(file);
+        }
+
+        public void LoadParams(string file)
+        {
+            NeuralNetworkParams nnp = new NeuralNetworkParams();
+            nnp.Load(file);
+
+            hidden_layers = nnp.hidden_layers;
+            output_layer = nnp.output_layer;
+            numOfNeurons = nnp.numOfNeurons;
+            learning_rate = nnp.learning_rate;
+            use_ga = nnp.use_ga;
+            inputs_mins = nnp.inputs_mins;
+            inputs_maxs = nnp.inputs_maxs;
+            outputs_mins = nnp.outputs_mins;
+            outputs_maxs = nnp.outputs_maxs;
+            input_dimension = nnp.input_dimension;
+            output_dimension = nnp.output_dimension;
+            double_format = nnp.double_format;
+        }
+        #endregion
     }
 
     public delegate void NeuralNetworkOutputMessage(string msg, NNOutputMessageType type = NNOutputMessageType.Normal);

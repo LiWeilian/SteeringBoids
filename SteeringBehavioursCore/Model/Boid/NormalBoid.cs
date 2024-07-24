@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace SteeringBehavioursCore.Model.Boid
 {
@@ -7,6 +8,7 @@ namespace SteeringBehavioursCore.Model.Boid
         protected const int PositionsToRemember = 25;
         protected readonly List<Behaviour.Behaviour> _behaviours;
 
+        public string Id { get; protected set; }
         public float Size { get; set; }
         public Position Position { get; set; }
         public List<Position> Positions { get; set; } = new List<Position>();
@@ -17,6 +19,7 @@ namespace SteeringBehavioursCore.Model.Boid
 
         public NormalBoid(float x, float y, float xVel, float yVel, float speed, float minSpeed = 0.1f)
         {
+            Id = Guid.NewGuid().ToString();
             Position = new Position(x, y);
             Velocity = new Velocity(xVel, yVel);
             Size = 6.0f;

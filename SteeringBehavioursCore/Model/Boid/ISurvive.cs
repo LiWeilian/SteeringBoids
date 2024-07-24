@@ -9,5 +9,6 @@ namespace SteeringBehavioursCore.Model.Boid
     internal interface ISurvive
     {
         float SurviveFactor { get; set; }
+        DateTime BornTime { get; }
     }
 }
