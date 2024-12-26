@@ -26,6 +26,8 @@ KeySteeringBoids/bin/
 KeySteeringBoids/obj/
 PredatorBoids/bin/
 PredatorBoids/obj/
+MapEditor/bin/
+MapEditor/obj/
 packages/
 *.lock
 *.ide

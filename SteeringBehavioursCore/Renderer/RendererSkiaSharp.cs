@@ -69,26 +69,26 @@ namespace SteeringBehavioursCore.Renderer
             DrawLine(pt4, pt1, 2, _wallColor);
         }
 
-        protected void DrawText(string text, float x, float y, Color color)
+        public void DrawText(string text, float x, float y, Color color)
         {
             _paint.Color = ConvertColor(color);
             SKTextBlob textBlob = SKTextBlob.Create(text, new SKFont());
             _canvas.DrawText(textBlob, x, y, _paint);
         }
 
-        protected void DrawLine(Point pt1, Point pt2, float lineWidth, Color color)
+        public void DrawLine(Point pt1, Point pt2, float lineWidth, Color color)
         {
             _paint.Color = ConvertColor(color);
             _canvas.DrawLine(ConvertPoint(pt1), ConvertPoint(pt2), _paint);
         }
 
-        protected void FillCircle(Point center, float radius, Color color)
+        public void FillCircle(Point center, float radius, Color color)
         {
             _paint.Color = ConvertColor(color);
             _canvas.DrawCircle(ConvertPoint(center), radius, _paint);
         }
 
-        protected void DrawTriangle(Point center, float direction, float speed, float size, Color color)
+        public void DrawTriangle(Point center, float direction, float speed, float size, Color color)
         {
             _paint.Color = ConvertColor(color);
             Point p1 = new Point(center.X + size * Math.Cos(direction / 180 * Math.PI), center.Y + size * Math.Sin(direction / 180 * Math.PI));

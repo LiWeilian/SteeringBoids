@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvoidObstacleBoidsNNTrain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvoidObstacleBoidsNNTest", "AvoidObstacleBoidsNNTest\AvoidObstacleBoidsNNTest.csproj", "{160E8E49-1C3F-4A5A-8BBA-0225D315312F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor", "MapEditor\MapEditor.csproj", "{4107A41A-7541-48B7-8CFF-C766D0497879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{160E8E49-1C3F-4A5A-8BBA-0225D315312F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{160E8E49-1C3F-4A5A-8BBA-0225D315312F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{160E8E49-1C3F-4A5A-8BBA-0225D315312F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4107A41A-7541-48B7-8CFF-C766D0497879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4107A41A-7541-48B7-8CFF-C766D0497879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4107A41A-7541-48B7-8CFF-C766D0497879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4107A41A-7541-48B7-8CFF-C766D0497879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

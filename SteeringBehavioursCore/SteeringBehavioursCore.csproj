@@ -95,6 +95,7 @@
     <Compile Include="Controller\AvoidObstacleNNTrainController.cs" />
     <Compile Include="Controller\FlockingBoidsController.cs" />
     <Compile Include="Controller\HiddenController.cs" />
+    <Compile Include="Controller\MapEditorController.cs" />
     <Compile Include="Controller\PathFollowingController.cs" />
     <Compile Include="Controller\PredatorBoidsController.cs" />
     <Compile Include="Controller\SteeringByKeysController.cs" />
@@ -138,10 +139,12 @@
     <Compile Include="Model\Field\AvoidObstacleNNTestField.cs" />
     <Compile Include="Model\Field\AvoidObstacleNNTrainField.cs" />
     <Compile Include="Model\Field\BaseField.cs" />
+    <Compile Include="Model\Field\FieldGenerator.cs" />
     <Compile Include="Model\Field\HiddenField.cs" />
     <Compile Include="Model\Field\IObstacleField.cs" />
     <Compile Include="Model\Boid\ISurvive.cs" />
     <Compile Include="Model\Field\ISurviveField.cs" />
+    <Compile Include="Model\Field\MapEditorField.cs" />
     <Compile Include="Model\Field\Obstacle.cs" />
     <Compile Include="Model\Field\PathFollowingField.cs" />
     <Compile Include="Model\Field\PredatorBoidsField.cs" />
@@ -168,6 +171,7 @@
     <Compile Include="Renderer\HiddenRenderer.cs" />
     <Compile Include="Renderer\IRenderer.cs" />
     <Compile Include="Renderer\KeySteeringRenderer.cs" />
+    <Compile Include="Renderer\MapEditorRenderer.cs" />
     <Compile Include="Renderer\PathFollowingRenderer.cs" />
     <Compile Include="Renderer\Point.cs" />
     <Compile Include="Renderer\PredatorBoidsRenderer.cs" />
