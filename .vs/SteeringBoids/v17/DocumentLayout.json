@@ -3,63 +3,63 @@
   "WorkspaceRootPath": "C:\\work_lab\\GitHub\\SteeringBoids\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\mapeditorfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\mapeditorfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\mapeditorrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\mapeditorrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\mapeditor\\maptool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|solutionrelative:mapeditor\\maptool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|solutionrelative:mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|c:\\work_lab\\github\\steeringboids\\mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|solutionrelative:mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|c:\\work_lab\\github\\steeringboids\\mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|solutionrelative:mapeditor\\formmapeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\mapeditorfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\mapeditorfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\mapeditorrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\mapeditorrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|c:\\work_lab\\github\\steeringboids\\mapeditor\\maptool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4107A41A-7541-48B7-8CFF-C766D0497879}|MapEditor\\MapEditor.csproj|solutionrelative:mapeditor\\maptool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\avoidobstaclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\avoidobstacleairenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstacleairenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\arriverenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\arriverenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\mapeditorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\controller\\mapeditorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\mapeditorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\avoidobstaclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\avoidobstacleairenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstacleairenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\arriverenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\arriverenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\predatorboidsrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\renderer\\avoidobstaclenntestrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\predatorboidsfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\model\\field\\fieldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\model\\field\\fieldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\model\\field\\fieldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\arrivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\controller\\arrivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\arrivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|c:\\work_lab\\github\\steeringboids\\steeringbehaviourscore\\controller\\avoidobstacleaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|C:\\work_lab\\GitHub\\SteeringBoids\\steeringbehaviourscore\\controller\\avoidobstacleaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD1046F7-BAA7-4B65-8D60-871747BC48B5}|SteeringBehavioursCore\\SteeringBehavioursCore.csproj|solutionrelative:steeringbehaviourscore\\controller\\avoidobstacleaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 995,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,7 +114,84 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MapEditorField.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA6wCoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T03:33:05.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AvoidObstacleRenderer.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAC0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T03:57:50.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormMapEditor.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\FormMapEditor.cs",
+              "RelativeDocumentMoniker": "MapEditor\\FormMapEditor.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\FormMapEditor.cs",
+              "RelativeToolTip": "MapEditor\\FormMapEditor.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAowG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T03:31:28.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapEditorController.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\MapEditorController.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\MapEditorController.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\MapEditorController.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\MapEditorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T03:33:32.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapTool.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\MapTool.cs",
+              "RelativeDocumentMoniker": "MapEditor\\MapTool.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\MapTool.cs",
+              "RelativeToolTip": "MapEditor\\MapTool.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAowJUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T06:01:14.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MapEditorRenderer.cs",
+              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
+              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
+              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
+              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwDQAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T03:37:17.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FormMapEditor.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\FormMapEditor.cs",
               "RelativeDocumentMoniker": "MapEditor\\FormMapEditor.cs",
@@ -126,20 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MapEditorField.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\MapEditorField.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAHMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:33:05.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AvoidObstacleAIRenderer.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleAIRenderer.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleAIRenderer.cs",
@@ -147,64 +211,11 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleAIRenderer.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowCkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T06:34:52.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T06:34:52.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AvoidObstacleRenderer.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleRenderer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAC0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:57:50.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormMapEditor.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\FormMapEditor.cs",
-              "RelativeDocumentMoniker": "MapEditor\\FormMapEditor.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\FormMapEditor.cs",
-              "RelativeToolTip": "MapEditor\\FormMapEditor.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowGAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:31:28.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MapEditorRenderer.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\MapEditorRenderer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwB4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:37:17.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MapTool.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\MapTool.cs",
-              "RelativeDocumentMoniker": "MapEditor\\MapTool.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\MapEditor\\MapTool.cs",
-              "RelativeToolTip": "MapEditor\\MapTool.cs",
-              "ViewState": "AgIAABABAAAAAAAAAAAkwCUBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T06:01:14.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ArriveRenderer.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\ArriveRenderer.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\ArriveRenderer.cs",
@@ -212,12 +223,11 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\ArriveRenderer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:57:26.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T03:57:26.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PredatorBoidsRenderer.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
@@ -225,12 +235,11 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\PredatorBoidsRenderer.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:35:40.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T03:35:40.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AvoidObstacleNNTestRenderer.cs",
               "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
               "RelativeDocumentMoniker": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
@@ -238,8 +247,7 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Renderer\\AvoidObstacleNNTestRenderer.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAAIwAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T04:06:58.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T04:06:58.623Z"
             },
             {
               "$type": "Document",
@@ -251,8 +259,7 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\PredatorBoidsField.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:35:08.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T03:35:08.155Z"
             },
             {
               "$type": "Document",
@@ -264,8 +271,7 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Controller\\ArriveController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:33:34.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T03:33:34.562Z"
             },
             {
               "$type": "Document",
@@ -277,8 +283,7 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Model\\Field\\FieldGenerator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:36:48.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T03:36:48.062Z"
             },
             {
               "$type": "Document",
@@ -290,21 +295,7 @@
               "RelativeToolTip": "SteeringBehavioursCore\\Controller\\AvoidObstacleAIController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:33:40.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MapEditorController.cs",
-              "DocumentMoniker": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\MapEditorController.cs",
-              "RelativeDocumentMoniker": "SteeringBehavioursCore\\Controller\\MapEditorController.cs",
-              "ToolTip": "C:\\work_lab\\GitHub\\SteeringBoids\\SteeringBehavioursCore\\Controller\\MapEditorController.cs",
-              "RelativeToolTip": "SteeringBehavioursCore\\Controller\\MapEditorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T03:33:32.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T03:33:40.957Z"
             }
           ]
         }

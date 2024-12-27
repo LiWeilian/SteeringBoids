@@ -25,9 +25,9 @@ namespace MapEditor
             _renderer = _controller.Renderer as MapEditorRenderer;
         }
 
-        protected PathPoint NearestPathPoint(float X, float Y)
+        protected PathPoint NearestPathPoint(float x, float y)
         {
-            return _field?.BasePathPoints.FirstOrDefault(p => p.Position.Distance(new Position(X, Y)) < 10);
+            return _field?.NearestPathPoint(new Position(x, y));
         }
 
         public virtual void MapMouseClick(MouseEventArgs e)
@@ -144,10 +144,10 @@ namespace MapEditor
             base.RenderSketch();
 
             float lineWidth = 4f;
-            Color lineColor = new Color(255, 128, 0);
+            Color lineColor = new Color(255, 255, 0);
 
             float pointSize = 6f;
-            Color pointColor = new Color(255, 128, 0);
+            Color pointColor = new Color(255, 255, 0);
 
             if (_lineSketch != null)
             {
@@ -285,10 +285,10 @@ namespace MapEditor
             base.RenderSketch();
 
             float lineWidth = 4f;
-            Color lineColor = new Color(255, 128, 0);
+            Color lineColor = new Color(255, 255, 0);
 
             float pointSize = 6f;
-            Color pointColor = new Color(255, 128, 0);
+            Color pointColor = new Color(255, 255, 0);
 
             if (_obstacleSketch != null)
             {

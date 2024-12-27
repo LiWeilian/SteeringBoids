@@ -115,6 +115,18 @@ namespace SteeringBehavioursCore.Model.Field
 
             Obstacles.Add(obstacle);
         }
+
+        private static float nearestTolerance = 20f;
+        public PathPoint NearestPathPoint(Position position)
+        {
+            if (position == null || _basePathPoints == null)
+            {
+                return null;
+            }
+
+            List<PathPoint> points = _basePathPoints.Where(p => p.Position.Distance(position) < nearestTolerance).ToList();
+            return points.OrderBy(p => p.Position.Distance(position)).FirstOrDefault();
+        }
     }
 
 

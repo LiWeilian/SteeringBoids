@@ -34,9 +34,14 @@
             this.btnAddObstacle = new System.Windows.Forms.Button();
             this.btnAddPathPoint = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ssStatus = new System.Windows.Forms.StatusStrip();
+            this.tsslPosition = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslNearestPoint = new System.Windows.Forms.ToolStripStatusLabel();
             this.ResultField = new SkiaSharp.Views.Desktop.SKGLControl();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.ssStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,12 +98,38 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.ssStatus);
             this.panel2.Controls.Add(this.ResultField);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1282, 668);
             this.panel2.TabIndex = 1;
+            // 
+            // ssStatus
+            // 
+            this.ssStatus.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ssStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.tsslNearestPoint,
+            this.tsslPosition});
+            this.ssStatus.Location = new System.Drawing.Point(0, 642);
+            this.ssStatus.Name = "ssStatus";
+            this.ssStatus.Size = new System.Drawing.Size(1282, 26);
+            this.ssStatus.TabIndex = 6;
+            this.ssStatus.Text = "statusStrip1";
+            // 
+            // tsslPosition
+            // 
+            this.tsslPosition.Name = "tsslPosition";
+            this.tsslPosition.Size = new System.Drawing.Size(54, 20);
+            this.tsslPosition.Text = "坐标：";
+            // 
+            // tsslNearestPoint
+            // 
+            this.tsslNearestPoint.Name = "tsslNearestPoint";
+            this.tsslNearestPoint.Size = new System.Drawing.Size(69, 20);
+            this.tsslNearestPoint.Text = "最近点：";
             // 
             // ResultField
             // 
@@ -113,6 +144,13 @@
             this.ResultField.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintGLSurfaceEventArgs>(this.ResultField_PaintSurface);
             this.ResultField.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ResultField_KeyUp);
             this.ResultField.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ResultField_MouseClick);
+            this.ResultField.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ResultField_MouseMove);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(65, 20);
+            this.toolStripStatusLabel1.Text = "              ";
             // 
             // FormMapEditor
             // 
@@ -127,6 +165,9 @@
             this.Shown += new System.EventHandler(this.FormMapEditor_Shown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ssStatus.ResumeLayout(false);
+            this.ssStatus.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -140,6 +181,10 @@
         private System.Windows.Forms.Button btnAddObstacle;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnClearPathPoints;
+        private System.Windows.Forms.StatusStrip ssStatus;
+        private System.Windows.Forms.ToolStripStatusLabel tsslPosition;
+        private System.Windows.Forms.ToolStripStatusLabel tsslNearestPoint;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

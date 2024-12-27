@@ -108,5 +108,17 @@ namespace MapEditor
             (_controller.Field as MapEditorField).Obstacles.Clear();
             ResultField.Invalidate();
         }
+
+        private void ResultField_MouseMove(object sender, MouseEventArgs e)
+        {
+            tsslPosition.Text = $"坐标：{e.X}, {e.Y}";
+
+            PathPoint nearestPoint = (_controller.Field as MapEditorField).NearestPathPoint(new Position(e.X, e.Y));
+            tsslNearestPoint.Text = string.Empty;
+            if (nearestPoint != null)
+            {
+                tsslNearestPoint.Text = $"最近点：{nearestPoint.Code}";
+            }
+        }
     }
 }

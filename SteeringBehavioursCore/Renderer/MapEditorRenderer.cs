@@ -50,7 +50,7 @@ namespace SteeringBehavioursCore.Renderer
         {
             foreach (var pathPoint in field.BasePathPoints)
             {
-                FillCircle(new Point(pathPoint.Position.X, pathPoint.Position.Y), 2, new Color(255, 255, 0));
+                FillCircle(new Point(pathPoint.Position.X, pathPoint.Position.Y), 2, new Color(128, 128, 128));
             }
         }
 
