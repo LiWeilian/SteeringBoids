@@ -37,7 +37,7 @@ namespace SteeringBehavioursCore.Renderer
             _canvas.Clear(ConvertColor(color));
         }
 
-        public void Dispose()
+        public override void Dispose()
         {
             _paint.Dispose();
         }
